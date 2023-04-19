@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import Offerings from "../Offerings";
 
 const Home = () => {
   const textRef = useRef(null);
@@ -24,27 +25,30 @@ const Home = () => {
   }, []);
 
   return (
-    <section id="home">
-      <header>
-        <h1 title="Moshe Gadol" alt="Moshe Gadol">
-          Moshe Gadol
-        </h1>
-        <h2>
-          {"< "}Web Developer{" />"}
-        </h2>
-        <div className="container">
-          <span className="text first-text">
-            I Maximize Your Online Impact With
-          </span>
-          &nbsp;
-          <span className="text second-text" ref={textRef}>
-            {/* Add ::before pseudo-element */}
-            Phenomenal Details
-            <span className="second-text__before"></span>
-          </span>
-        </div>
-      </header>
-    </section>
+    <>
+      <section id="home">
+        <header className="home-header">
+          <h1 title="Moshe Gadol" alt="Moshe Gadol">
+            Moshe Gadol
+          </h1>
+          <h2>
+            {"< "}Front End Web Developer{" />"}
+          </h2>
+          <div className="container">
+            <span className="text first-text">
+              I Maximize Your Online Impact With
+            </span>
+            &nbsp;
+            <span className="text second-text" ref={textRef}>
+              {/* Add ::before pseudo-element */}
+              Phenomenal Details
+              <span className="second-text__before"></span>
+            </span>
+          </div>
+        </header>
+      </section>
+      <Offerings />
+    </>
   );
 };
 

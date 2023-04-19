@@ -19,7 +19,7 @@ const Navbar = (props) => {
 
   return (
     <nav className="navbar">
-      <a href="/">
+      <a href="/moshe-portfolio">
         <img src={favicon} alt="Home icon" className="navigation-logo"></img>
       </a>
       <ul className={active}>

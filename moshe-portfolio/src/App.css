@@ -62,6 +62,12 @@ button {
   /* border-bottom: 1px solid var(--orange); */
 }
 
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 nav {
   width: 100%;
   min-height: 10vh;
@@ -112,7 +118,7 @@ nav .nav-active {
   transform: translateX(0);
 }
 
-/* main */
+/* main component */
 
 section {
   min-height: 100vh;
@@ -126,7 +132,7 @@ section {
   justify-content: center;
 }
 
-#home header {
+#home .home-header {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -135,26 +141,31 @@ section {
   flex-direction: column;
 }
 
-#home header h1 {
+#home .home-header h1 {
   font-size: 88px;
-  background-image: linear-gradient(to right, var(--orange), #DB6400, var(--black));
+  background-image: linear-gradient(
+    to right,
+    var(--orange),
+    #db6400,
+    var(--black)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   margin: 120px 0 0;
 }
 
-#home header h2 {
+#home .home-header h2 {
   font-size: 36px;
   margin: 20px 0 0;
 }
 
-#home header .container {
+#home .home-header .container {
   margin: 120px 0 0;
   text-align: center;
 }
 
-#home header .container .text {
+#home .home-header .container .text {
   font-size: 24px;
   margin: 120px 0 0;
   position: relative;
@@ -162,15 +173,14 @@ section {
   font-weight: bold;
 }
 
-
 /* Update the styles for .second-text element */
-#home header .text.second-text {
+#home .home-header .text.second-text {
   position: relative; /* Add relative position to establish a new stacking context for ::before pseudo-element */
   overflow: hidden;
   color: var(--orange);
 }
 
-#home header .text.second-text::before {
+#home .home-header .text.second-text::before {
   content: "";
   position: absolute;
   top: 0;
@@ -183,7 +193,8 @@ section {
 }
 
 @keyframes animate {
-  40%, 60% {
+  40%,
+  60% {
     left: 100%;
   }
 
@@ -192,7 +203,99 @@ section {
   }
 }
 
+/* offerings component */
 
+#offerings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#offerings .offerings-header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#offerings header h1 {
+  font-size: 66px;
+  width: 100%;
+  padding: 0 55px;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    #db6400,
+    var(--black), var(--orange)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#offerings .offerings-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#offerings .offerings-container .left {
+  flex-direction: row;
+}
+
+#offerings .offerings-container .right {
+  flex-direction: row-reverse;
+}
+
+#offerings .offerings-container .offering-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  /* min-height: 100vh; */
+  font-weight: bold;
+}
+
+#offerings .offering-item .desc-container,
+#offerings .offering-item .img-container {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#offerings .offering-item .desc-container {
+  text-align: left;
+}
+
+#offerings .offering-item .desc-container span {
+  width: 100%;
+  font-size: 48px;
+  background-image: linear-gradient(
+    to right,
+    #db6400,
+    var(--black), var(--orange)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: 10px;
+}
+
+#offerings .offering-item .desc-container p {
+  width: 100%;
+  font-size: 22px;
+}
+
+#offerings .offering-item .img-container img {
+  width: 70%;
+}
 
 @media screen and (max-width: 900px) {
   .navbar {
