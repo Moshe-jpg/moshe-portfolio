@@ -52,7 +52,7 @@ const Offerings = () => {
   return (
     <section id="offerings">
       <header className="offerings-header">
-        <h1>How Do I Craft Your Brand Image?</h1>
+        <h1>What Can I Offer You?</h1>
       </header>
       <ul className="offerings-container">
         {offerings.map((offering, index) => (

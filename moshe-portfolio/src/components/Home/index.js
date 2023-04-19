@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Offerings from "../Offerings";
+import Facts from "../Facts";
 
 const Home = () => {
   const textRef = useRef(null);
@@ -48,6 +49,7 @@ const Home = () => {
         </header>
       </section>
       <Offerings />
+      <Facts />
     </>
   );
 };
