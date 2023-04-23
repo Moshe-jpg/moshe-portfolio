@@ -44,7 +44,6 @@ const Navbar = (props) => {
         </li>
         <li
           className="nav-link"
-          id="nav1"
           onClick={() => {
             setActive("nav-menu");
             turned("menu-btn");
@@ -57,8 +56,7 @@ const Navbar = (props) => {
           My Work
         </li>
         <li
-          className="nav-link"
-          id="nav2"
+          className="nav-link lets-talk-link"
           onClick={() => {
             setActive("nav-menu");
             turned("menu-btn");

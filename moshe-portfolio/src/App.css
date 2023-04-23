@@ -111,6 +111,18 @@ nav ul li:hover {
   border-width: 1px;
 }
 
+nav ul .lets-talk-link {
+  font-size: 22px;
+   border-bottom: 1px solid transparent;
+  background: var(--orange);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+nav ul .lets-talk-link:hover {
+  transform: scale(1.05);
+}
+
 nav .toggler {
   cursor: pointer;
   display: none;
