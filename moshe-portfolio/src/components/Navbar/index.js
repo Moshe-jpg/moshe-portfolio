@@ -16,6 +16,10 @@ const Navbar = (props) => {
       : turned("menu-btn");
   };
 
+  const scrollToWork = () => {
+    const workElement = document.getElementById("work");
+    workElement.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <nav className="navbar">
@@ -44,15 +48,13 @@ const Navbar = (props) => {
           onClick={() => {
             setActive("nav-menu");
             turned("menu-btn");
-            setTimeout(() => {
-              setCurrentPage(pages[1]);
-            }, 1000);
+            scrollToWork();
           }}
           title="My Work"
           rel="noopener noreferrer"
           tabIndex="0"
         >
-         My Work
+          My Work
         </li>
         <li
           className="nav-link"
@@ -61,7 +63,7 @@ const Navbar = (props) => {
             setActive("nav-menu");
             turned("menu-btn");
             setTimeout(() => {
-              setCurrentPage(pages[2]);
+              setCurrentPage(pages[1]);
             }, 1000);
           }}
           title="Let's Talk"

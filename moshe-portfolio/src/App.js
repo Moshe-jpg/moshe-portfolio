@@ -10,9 +10,6 @@ function App() {
       name: "Home",
     },
     {
-      name: "My Work",
-    },
-    {
       name: "Let's Talk",
     },
   ]);

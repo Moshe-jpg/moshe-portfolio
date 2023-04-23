@@ -13,7 +13,7 @@
   --white: #ffffff;
   --black: #000000;
   --orange: #ff8400;
-  --light-transparent: rgba(255, 255, 255, 0.5);
+  --light-transparent: rgba(255, 255, 255, 0.25);
   --dark-transparent: rgba(0, 0, 0, 0.5);
   --header-font: "Nanum Gothic", sans-serif;
   --header-font-secondary: "Noto Serif JP", serif;
@@ -167,7 +167,8 @@ section {
 }
 
 #home .home-header .container {
-  margin: 120px 0 0;
+  position: absolute;
+  bottom: 10%;
   text-align: center;
 }
 
@@ -233,7 +234,8 @@ section {
   background-image: linear-gradient(
     to right,
     #db6400,
-    var(--black), var(--orange)
+    var(--black),
+    var(--orange)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -286,7 +288,8 @@ section {
   background-image: linear-gradient(
     to right,
     #db6400,
-    var(--black), var(--orange)
+    var(--black),
+    var(--orange)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -303,23 +306,23 @@ section {
   width: 70%;
 }
 
-/* facts component */
+/* work component */
 
-#facts {
+#work {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-#facts .facts-header {
+#work .work-header {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#facts header h1 {
+#work header h1 {
   font-size: 66px;
   width: 100%;
   padding: 0 55px;
@@ -327,11 +330,145 @@ section {
   background-image: linear-gradient(
     to right,
     #db6400,
-    var(--black), var(--orange)
+    var(--black),
+    var(--orange)
   );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+#work .works-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#work .work-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 0 150px;
+}
+
+#work .works-container .right {
+  flex-direction: row-reverse;
+}
+
+#work .works-container .left {
+  flex-direction: row;
+}
+
+#work .desc-container {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#work .desc-container span {
+  font-size: 44px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #db6400,
+    var(--black),
+    var(--orange)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* padding-bottom: 20px; */
+  /* line-height: var(--height-large); */
+}
+
+#work .desc-container p {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#work .desc-container .bg-container {
+  border: 1px solid var(--orange);
+  border-radius: 50%;
+  padding: 50px 20px;
+  width: 400px; /* or whatever width you want */
+  height: 400px; /* or whatever height you want */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#work .work-item .img-container {
+  position: relative;
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+#work .work-item .img-container:hover .visit-btn-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+#work .work-item .img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+#work .work-item .img-container .visit-btn-container {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: var(--light-transparent);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+@keyframes flip {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+#work .visit-btn-container:hover a {
+  animation: flip 1s 1;
+}
+
+#work .visit-btn-container a {
+  padding: 15px 20px;
+  background: var(--white);
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+#work .visit-btn-container a:hover {
+  background: var(--orange);
+  color: var(--white);
+  border: 1px solid var(--white);
 }
 
 @media screen and (max-width: 900px) {
