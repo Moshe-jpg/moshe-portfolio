@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moshe-portfolio/static/css/main.afb54723.css",
-    "main.js": "/moshe-portfolio/static/js/main.ead84b5f.js",
+    "main.css": "/moshe-portfolio/static/css/main.49811bd9.css",
+    "main.js": "/moshe-portfolio/static/js/main.4767a0f3.js",
     "static/js/787.6dbf52a7.chunk.js": "/moshe-portfolio/static/js/787.6dbf52a7.chunk.js",
     "static/media/responsive.png": "/moshe-portfolio/static/media/responsive.47ffc628938b9fa835d5.png",
     "static/media/visual-storytelling.png": "/moshe-portfolio/static/media/visual-storytelling.ee9c7071ac99da5e7786.png",
@@ -14,12 +14,12 @@
     "static/media/mk-sr.webp": "/moshe-portfolio/static/media/mk-sr.a3dd3f0183587e69600c.webp",
     "index.html": "/moshe-portfolio/index.html",
     "static/media/favicon.ico": "/moshe-portfolio/static/media/favicon.90dfac391aa65f48fe23.ico",
-    "main.afb54723.css.map": "/moshe-portfolio/static/css/main.afb54723.css.map",
-    "main.ead84b5f.js.map": "/moshe-portfolio/static/js/main.ead84b5f.js.map",
+    "main.49811bd9.css.map": "/moshe-portfolio/static/css/main.49811bd9.css.map",
+    "main.4767a0f3.js.map": "/moshe-portfolio/static/js/main.4767a0f3.js.map",
     "787.6dbf52a7.chunk.js.map": "/moshe-portfolio/static/js/787.6dbf52a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afb54723.css",
-    "static/js/main.ead84b5f.js"
+    "static/css/main.49811bd9.css",
+    "static/js/main.4767a0f3.js"
   ]
 }
