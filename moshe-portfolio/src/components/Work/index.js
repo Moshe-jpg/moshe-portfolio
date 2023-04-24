@@ -1,4 +1,6 @@
 import React from "react";
+import LazyLoad from "react-lazyload";
+
 import kiImg from "../../assets/ki-sr.webp";
 import mkImg from "../../assets/mk-sr.webp";
 import innerPatternImg from "../../assets/ip-sr.webp";
@@ -9,7 +11,6 @@ const Work = () => {
     {
       imgSrc: kiImg,
       name: "Kosher Innovations",
-      text: "The new Kosher Innovations website. Super Fast, beautifully animated",
       site_href: "https://kosherinnovations.github.io/kosher-lamp/",
       repo_href: "https://github.com/KosherInnovations/kosher-lamp",
       textSide: "right",
@@ -17,7 +18,6 @@ const Work = () => {
     {
       imgSrc: mkImg,
       name: "Mekor Chaim",
-      text: "A small feature site built for a post secondary school client in Brooklyn.",
       site_href: "https://moshe-jpg.github.io/mekor-chaim/",
       repo_href: "https://github.com/moshe-jpg/mekor-chaim",
       textSide: "left",
@@ -25,7 +25,6 @@ const Work = () => {
     {
       imgSrc: innerPatternImg,
       name: "InnerPattern",
-      text: "A mental health tracker application. Helps keep track of your thoughts and accompanying mood. ",
       site_href: "http://innerpattern.herokuapp.com/",
       repo_href: "https://github.com/Tyl3r-s/InnerPattern",
       textSide: "right",
@@ -33,7 +32,6 @@ const Work = () => {
     {
       imgSrc: exerciseImg,
       name: "Run Buddy",
-      text: "A basic webpage built for an online exercise startup. Splendid landing page to display Run Buddy.",
       site_href: "https://moshe-jpg.github.io/run-buddy/",
       repo_href: "https://github.com/Moshe-jpg/run-buddy",
       textSide: "left",
@@ -51,11 +49,12 @@ const Work = () => {
             <div className="desc-container">
               <div className="bg-container">
                 <span>{work.name}</span>
-                <p>{work.text}</p>
               </div>
             </div>
             <div className="img-container">
-              <img src={work.imgSrc} alt={work.text}></img>
+              <LazyLoad height={200} offset={400}>
+                <img src={work.imgSrc} alt={work.text}></img>
+              </LazyLoad>
               <div className="visit-btn-container">
                 <a
                   href={work.site_href}

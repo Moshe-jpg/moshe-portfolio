@@ -1,4 +1,6 @@
 import React from "react";
+import LazyLoad from "react-lazyload";
+import Skills from "../Skills";
 import storyTellingImg from "../../assets/visual-storytelling.png";
 import responsiveImg from "../../assets/responsive.png";
 import animationImg from "../../assets/animation.png";
@@ -54,6 +56,7 @@ const Offerings = () => {
       <header className="offerings-header">
         <h1>What Do I Offer?</h1>
       </header>
+      <Skills />
       <ul className="offerings-container">
         {offerings.map((offering, index) => (
           <li key={index} className={`offering-item ${offering.textSide}`}>
@@ -62,7 +65,9 @@ const Offerings = () => {
               <p>{offering.description}</p>
             </div>
             <div className="img-container">
-              <img src={offering.imgSrc} alt={offering.altTag}></img>
+              <LazyLoad height={200} offset={400}>
+                <img src={offering.imgSrc} alt={offering.altTag}></img>
+              </LazyLoad>
             </div>
           </li>
         ))}
