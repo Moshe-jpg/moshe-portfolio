@@ -2,7 +2,9 @@ import React, { useRef, useEffect } from "react";
 import Offerings from "../Offerings";
 import Work from "../Work";
 
-const Home = () => {
+const Home = (props) => {
+  const { pages = [], setCurrentPage } = props;
+
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -49,7 +51,7 @@ const Home = () => {
         </header>
       </section>
       <Offerings />
-      <Work />
+      <Work pages={pages} setCurrentPage={setCurrentPage} />
     </>
   );
 };

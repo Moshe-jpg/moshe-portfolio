@@ -56,7 +56,7 @@ const Offerings = () => {
       <header className="offerings-header">
         <h1>What Do I Offer?</h1>
       </header>
-      <Skills />
+
       <ul className="offerings-container">
         {offerings.map((offering, index) => (
           <li key={index} className={`offering-item ${offering.textSide}`}>
@@ -72,6 +72,7 @@ const Offerings = () => {
           </li>
         ))}
       </ul>
+      <Skills />
     </section>
   );
 };

@@ -21,6 +21,16 @@ const Navbar = (props) => {
     workElement.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToHome = () => {
+    const homeElement = document.getElementById("home");
+    homeElement.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToContact = () => {
+    const contactElement = document.getElementById("contact");
+    contactElement.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <nav className="navbar">
       <a href="/moshe-portfolio">
@@ -34,6 +44,9 @@ const Navbar = (props) => {
             turned("menu-btn");
             setTimeout(() => {
               setCurrentPage(pages[0]);
+              setTimeout(() => {
+                scrollToHome();
+              }, 500);
             }, 1000);
           }}
           title="Home"
@@ -47,7 +60,12 @@ const Navbar = (props) => {
           onClick={() => {
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToWork();
+            setTimeout(() => {
+              setCurrentPage(pages[0]);
+              setTimeout(() => {
+                scrollToWork();
+              }, 500);
+            }, 1000);
           }}
           title="My Work"
           rel="noopener noreferrer"
@@ -62,6 +80,9 @@ const Navbar = (props) => {
             turned("menu-btn");
             setTimeout(() => {
               setCurrentPage(pages[1]);
+              setTimeout(() => {
+                scrollToContact();
+              }, 500);
             }, 1000);
           }}
           title="Let's Talk"

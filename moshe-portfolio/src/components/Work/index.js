@@ -6,7 +6,9 @@ import mkImg from "../../assets/mk-sr.webp";
 import innerPatternImg from "../../assets/ip-sr.webp";
 import exerciseImg from "../../assets/rb-sr.webp";
 
-const Work = () => {
+const Work = (props) => {
+  const { pages = [], setCurrentPage } = props;
+
   const works = [
     {
       imgSrc: kiImg,
@@ -37,6 +39,11 @@ const Work = () => {
       textSide: "left",
     },
   ];
+
+  const scrollToContact = () => {
+    const contactElement = document.getElementById("contact");
+    contactElement.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section id="work">
@@ -69,6 +76,20 @@ const Work = () => {
           </li>
         ))}
       </ul>
+      <div className="lets-talk-btn">
+        <button
+          onClick={() => {
+            setTimeout(() => {
+              setCurrentPage(pages[1]);
+              setTimeout(() => {
+                scrollToContact();
+              }, 500);
+            }, 1000);
+          }}
+        >
+          Let's Talk
+        </button>
+      </div>
     </section>
   );
 };

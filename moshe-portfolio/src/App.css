@@ -119,7 +119,7 @@ nav ul .lets-talk-link {
   border-radius: 5px;
 }
 
-nav ul .lets-talk-link:hover {
+nav ul .lets-talk-link:hover, #work .lets-talk-btn button:hover {
   transform: scale(1.05);
 }
 
@@ -325,6 +325,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 0 0 5px 5px;
 }
 
 #work .work-header {
@@ -373,6 +374,22 @@ section {
   flex-direction: row;
 }
 
+#work .works-container .left .desc-container {
+  left: 75px;
+}
+
+#work .works-container .right .desc-container {
+  right: 75px;
+}
+
+#work .works-container .left .img-container {
+  margin-right: 75px;
+}
+
+#work .works-container .right .img-container {
+  margin-left: 75px;
+}
+
 #work .desc-container {
   width: 30%;
   height: 100vh;
@@ -381,6 +398,8 @@ section {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
+  z-index: 555;
 }
 
 #work .desc-container span {
@@ -415,6 +434,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: var(--light-transparent);
+  backdrop-filter: blur(5px);
 }
 
 #work .work-item .img-container {
@@ -485,6 +506,23 @@ section {
   border: 1px solid var(--white);
 }
 
+#work .lets-talk-btn {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#work .lets-talk-btn button {
+  background: var(--orange);
+  color: var(--white);
+  font-size: 36px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
 /* skills section */
 
 #skills {
@@ -492,10 +530,11 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 20vh;
 }
 
 #skills .skills-header {
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -524,15 +563,6 @@ section {
   position: relative;
 }
 
-#skills .logos::before {
-  position: absolute;
-  top: 0;
-  left:  150px;
-  width: 150px;
-  height: 100%;
-  background: red;
-}
-
 #skills .logos:hover .logos-slide {
   animation-play-state: paused;
 }
@@ -556,6 +586,133 @@ section {
   to {
     transform: translateX(-100%);
   }
+}
+
+/* contact component */
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#contact .contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .contact-form-header {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px var(--black);
+}
+
+#contact .contact-layout-container {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#contact .contact-layout-container .contact-container,
+#contact .contact-layout-container .img-container {
+  width: 40vw;
+  max-width: 600px;
+  height: 80vh;
+  overflow: hidden;
+}
+
+#contact .contact-layout-container .img-container img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#contact .contact-layout-container .contact-container {
+  background: #d6c8c8;
+  border: 1px solid var(--white);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+#contact .contact-form-header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 22px;
+  border-bottom: 1px solid var(--white);
+}
+
+#contact article {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--black);
+}
+
+#contact article,
+#contact article ul,
+#contact article ul li {
+  width: 100%;
+  height: 100%;
+}
+
+#contact article ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#contact article ul li img {
+  width: 25px;
+}
+
+#contact article ul .moshe-info,
+#contact article ul .contact-info,
+#contact article ul .social-info {
+  display: flex;
+  align-items: flex-start;
+  justify-self: center;
+  flex-direction: column;
+}
+
+#contact article ul .moshe-info span {
+  width: 100%;
+  margin: 5px 0;
+}
+
+#contact article ul .moshe-info span:first-child {
+  font-size: 20px;
+}
+
+#contact article ul .contact-info a {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+}
+
+#contact article ul .contact-info img {
+  margin-right: 10px;
+}
+
+#contact article ul .social-info .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+#contact article ul .social-info .social-links a {
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 900px) {
