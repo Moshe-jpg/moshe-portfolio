@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moshe-portfolio/static/css/main.40dc9a62.css",
-    "main.js": "/moshe-portfolio/static/js/main.1bdbc0c8.js",
+    "main.css": "/moshe-portfolio/static/css/main.4abe52fb.css",
+    "main.js": "/moshe-portfolio/static/js/main.c30e78ea.js",
     "static/js/787.6dbf52a7.chunk.js": "/moshe-portfolio/static/js/787.6dbf52a7.chunk.js",
     "static/media/responsive.png": "/moshe-portfolio/static/media/responsive.47ffc628938b9fa835d5.png",
     "static/media/visual-storytelling.png": "/moshe-portfolio/static/media/visual-storytelling.ee9c7071ac99da5e7786.png",
@@ -10,8 +10,11 @@
     "static/media/seo.png": "/moshe-portfolio/static/media/seo.85f5ac044640448e2f6a.png",
     "static/media/ki-sr.webp": "/moshe-portfolio/static/media/ki-sr.b9afcc5d68eb1d1dfc39.webp",
     "static/media/animation.png": "/moshe-portfolio/static/media/animation.e1c4f15737ffde667212.png",
+    "static/media/moshe-emoji.png": "/moshe-portfolio/static/media/moshe-emoji.8e8d5c67bdfcd837b07f.png",
     "static/media/speed.png": "/moshe-portfolio/static/media/speed.9bc77ad402d8c23c6b4f.png",
+    "static/media/github.png": "/moshe-portfolio/static/media/github.9e094d235b4caa7c31fc.png",
     "static/media/mk-sr.webp": "/moshe-portfolio/static/media/mk-sr.a3dd3f0183587e69600c.webp",
+    "static/media/gmail.png": "/moshe-portfolio/static/media/gmail.5f30c93be377c49dc948.png",
     "static/media/gsap-logo.webp": "/moshe-portfolio/static/media/gsap-logo.9257f4003665b46a58f6.webp",
     "static/media/github.webp": "/moshe-portfolio/static/media/github.91e267856e094713843f.webp",
     "static/media/mongodb.webp": "/moshe-portfolio/static/media/mongodb.15ffc0fc205ed3802870.webp",
@@ -28,12 +31,12 @@
     "static/media/html.webp": "/moshe-portfolio/static/media/html.365c7a4931dbbae98297.webp",
     "index.html": "/moshe-portfolio/index.html",
     "static/media/favicon.ico": "/moshe-portfolio/static/media/favicon.90dfac391aa65f48fe23.ico",
-    "main.40dc9a62.css.map": "/moshe-portfolio/static/css/main.40dc9a62.css.map",
-    "main.1bdbc0c8.js.map": "/moshe-portfolio/static/js/main.1bdbc0c8.js.map",
+    "main.4abe52fb.css.map": "/moshe-portfolio/static/css/main.4abe52fb.css.map",
+    "main.c30e78ea.js.map": "/moshe-portfolio/static/js/main.c30e78ea.js.map",
     "787.6dbf52a7.chunk.js.map": "/moshe-portfolio/static/js/787.6dbf52a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40dc9a62.css",
-    "static/js/main.1bdbc0c8.js"
+    "static/css/main.4abe52fb.css",
+    "static/js/main.c30e78ea.js"
   ]
 }
