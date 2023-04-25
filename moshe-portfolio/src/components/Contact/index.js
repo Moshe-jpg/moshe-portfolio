@@ -1,4 +1,5 @@
 import React from "react";
+import back from "../../assets/back.png"
 import memoji from "../../assets/moshe-emoji.png";
 import EmailSection from "../EmailSection";
 import linkedin from "../../assets/linkedin.png";
@@ -6,7 +7,9 @@ import github from "../../assets/github.png";
 import phone from "../../assets/phone.png";
 import gmail from "../../assets/gmail.png";
 
-const Contact = () => {
+const Contact = (props) => {
+  const { pages = [], setCurrentPage } = props;
+
   const imgArray = [
     {
       imgSrc: linkedin,
@@ -30,8 +33,27 @@ const Contact = () => {
     },
   ];
 
+  const scrollToHome = () => {
+    const homeElement = document.getElementById("home");
+    homeElement.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
+      <button
+        className="homepage-btn"
+        aria-label="Back To Home"
+        onClick={() => {
+          setTimeout(() => {
+            setCurrentPage(pages[0]);
+            setTimeout(() => {
+              scrollToHome();
+            }, 500);
+          }, 1000);
+        }}
+      >
+       <img src={back} alt="Back To Homepage"></img>
+      </button>
       <section id="contact">
         <div className="contact-layout-container">
           <div className="contact-container">

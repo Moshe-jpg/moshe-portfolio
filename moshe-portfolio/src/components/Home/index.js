@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import chat from "../../assets/chat.png"
 import Offerings from "../Offerings";
 import Work from "../Work";
 
@@ -27,8 +28,27 @@ const Home = (props) => {
     };
   }, []);
 
+  const scrollToEmail = () => {
+    const emailElement = document.getElementById("email");
+    emailElement.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
+      <button
+        className="message-btn"
+        aria-label="Send Me A Message"
+        onClick={() => {
+          setTimeout(() => {
+            setCurrentPage(pages[1]);
+            setTimeout(() => {
+              scrollToEmail();
+            }, 500);
+          }, 1000);
+        }}
+      >
+        <img src={chat} alt="Send Me A Message"></img>
+      </button>
       <section id="home">
         <header className="home-header">
           <h1 title="Moshe Gadol" alt="Moshe Gadol">

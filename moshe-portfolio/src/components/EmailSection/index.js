@@ -36,29 +36,37 @@ const EmailSection = () => {
   return (
     <section id="email">
       <form ref={form} onSubmit={sendEmail}>
-        <div className="inputBox">
-          <input
-            type="text"
-            name="user_name"
-            required="required"
-            className="input1"
-          />
-          <span>Name:</span>
+        <div className="inputBox-container">
+          <div className="inputBox">
+            <input
+              type="name"
+              name="user_name"
+              required="required"
+              placeholder="* My Name Is"
+            />
+          </div>
+          <div className="spacer"></div>
+          <div className="inputBox">
+            <input
+              type="email"
+              name="user_email"
+              required="required"
+              placeholder="* My Email Address Is"
+            />
+          </div>
+          <div className="spacer"></div>
+          <div className="inputBox inputBox-message">
+            <input
+              type="text"
+              name="message"
+              required="required"
+              className="inputBox-message-input"
+              placeholder="* I'm Reaching Out Because"
+            />
+          </div>
+          <div className="spacer"></div>
         </div>
-        <div className="inputBox">
-          <input type="email" name="user_email" required="required" />
-          <span>Email address:</span>
-        </div>
-        <div className="inputBox inputBoxMessage">
-          <input
-            name="message"
-            type="text"
-            required="required"
-            className="inputBoxMessageInput"
-          />
-          <span>Message:</span>
-        </div>
-        <div className="inputBoxBtnContainer">
+        <div className="inputBoxBtn-Container">
           <button
             type="submit"
             className="inputBoxBtn"
