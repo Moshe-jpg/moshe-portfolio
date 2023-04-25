@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moshe-portfolio/static/css/main.4abe52fb.css",
-    "main.js": "/moshe-portfolio/static/js/main.c30e78ea.js",
+    "main.css": "/moshe-portfolio/static/css/main.77db66d4.css",
+    "main.js": "/moshe-portfolio/static/js/main.be498efd.js",
     "static/js/787.6dbf52a7.chunk.js": "/moshe-portfolio/static/js/787.6dbf52a7.chunk.js",
     "static/media/responsive.png": "/moshe-portfolio/static/media/responsive.47ffc628938b9fa835d5.png",
     "static/media/visual-storytelling.png": "/moshe-portfolio/static/media/visual-storytelling.ee9c7071ac99da5e7786.png",
@@ -14,6 +14,7 @@
     "static/media/speed.png": "/moshe-portfolio/static/media/speed.9bc77ad402d8c23c6b4f.png",
     "static/media/github.png": "/moshe-portfolio/static/media/github.9e094d235b4caa7c31fc.png",
     "static/media/mk-sr.webp": "/moshe-portfolio/static/media/mk-sr.a3dd3f0183587e69600c.webp",
+    "static/media/chat.png": "/moshe-portfolio/static/media/chat.78cc8555d259e92a284d.png",
     "static/media/gmail.png": "/moshe-portfolio/static/media/gmail.5f30c93be377c49dc948.png",
     "static/media/gsap-logo.webp": "/moshe-portfolio/static/media/gsap-logo.9257f4003665b46a58f6.webp",
     "static/media/github.webp": "/moshe-portfolio/static/media/github.91e267856e094713843f.webp",
@@ -31,12 +32,12 @@
     "static/media/html.webp": "/moshe-portfolio/static/media/html.365c7a4931dbbae98297.webp",
     "index.html": "/moshe-portfolio/index.html",
     "static/media/favicon.ico": "/moshe-portfolio/static/media/favicon.90dfac391aa65f48fe23.ico",
-    "main.4abe52fb.css.map": "/moshe-portfolio/static/css/main.4abe52fb.css.map",
-    "main.c30e78ea.js.map": "/moshe-portfolio/static/js/main.c30e78ea.js.map",
+    "main.77db66d4.css.map": "/moshe-portfolio/static/css/main.77db66d4.css.map",
+    "main.be498efd.js.map": "/moshe-portfolio/static/js/main.be498efd.js.map",
     "787.6dbf52a7.chunk.js.map": "/moshe-portfolio/static/js/787.6dbf52a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4abe52fb.css",
-    "static/js/main.c30e78ea.js"
+    "static/css/main.77db66d4.css",
+    "static/js/main.be498efd.js"
   ]
 }
