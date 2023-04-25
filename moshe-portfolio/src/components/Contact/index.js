@@ -63,7 +63,7 @@ const Contact = (props) => {
             <article>
               <ul>
                 <li className="moshe-info">
-                  <span>Moshe Gadol</span>
+                  <span className="moshe-name">Moshe Gadol</span>
                   <span>Toronto, Ontario</span>
                   <span>Canada</span>
                 </li>

@@ -320,6 +320,49 @@ section {
   width: 100%;
 }
 
+/* skills section */
+
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 20vh;
+}
+
+#skills .logos {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+#skills .logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+#skills .logos-slide {
+  animation: 25s slide infinite linear;
+  display: inline-block;
+}
+
+#skills .logos-slide img {
+  /* width: 85px; */
+  height: 85px;
+  margin: 0 40px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
 /* work component */
 
 #work {
@@ -525,72 +568,11 @@ section {
   transition: 0.5s ease-in-out;
 }
 
-/* skills section */
-
-#skills {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 20vh;
-}
-
-#skills .skills-header {
-  min-height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#skills header h1 {
-  font-size: 66px;
-  width: 100%;
-  padding: 0 55px;
-  text-align: center;
-  background-image: linear-gradient(
-    to right,
-    #db6400,
-    var(--black),
-    var(--orange)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-#skills .logos {
-  overflow: hidden;
-  padding: 60px 0;
-  white-space: nowrap;
-  position: relative;
-}
-
-#skills .logos:hover .logos-slide {
-  animation-play-state: paused;
-}
-
-#skills .logos-slide {
-  animation: 25s slide infinite linear;
-  display: inline-block;
-}
-
-#skills .logos-slide img {
-  /* width: 85px; */
-  height: 85px;
-  margin: 0 40px;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 /* contact component */
+
+.homepage-btn, .message-btn {
+  z-index: 999;
+}
 
 .homepage-btn {
   position: fixed;
@@ -609,7 +591,8 @@ section {
   transition: 0.5s ease-in-out;
 }
 
-.homepage-btn:hover, .message-btn:hover {
+.homepage-btn:hover,
+.message-btn:hover {
   transform: scale(1.1);
 }
 
@@ -629,7 +612,8 @@ section {
   transition: 0.5s ease-in-out;
 }
 
-.message-btn img, .homepage-btn img  {
+.message-btn img,
+.homepage-btn img {
   width: 25px;
 }
 
@@ -659,7 +643,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 #contact .contact-layout-container .contact-container,
@@ -715,7 +699,6 @@ section {
 
 #contact article ul li img {
   width: 25px;
-  
 }
 
 #contact article ul .moshe-info,
@@ -877,5 +860,277 @@ section {
   .navbar {
     position: fixed;
     top: 0;
+    left: 0;
+    background: var(--light-transparent);
+    backdrop-filter: blur(5px);
   }
+
+  nav {
+    padding: 15px;
+  }
+
+  .message-btn {
+    right: 25px;
+    bottom: 25px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  nav ul {
+    background: var(--light-transparent);
+    backdrop-filter: blur(25px);
+  }
+
+  nav ul li {
+    font-size: 22px;
+    border-bottom: 1px solid transparent;
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    border-bottom: none;
+    transition: 0.5s ease-in-out;
+  }
+
+  /* home component */
+
+  #home .home-header h1 {
+    font-size: 3rem;
+    margin: 160px 0 0;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  #home .home-header h2 {
+    font-size: 16px;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 0;
+    padding: 0 15px;
+  }
+
+  #home .home-header .container {
+    bottom: 20%;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+    line-height: var(--height-large);
+  }
+
+  #home .home-header .container .first-text {
+    display: block;
+    font-weight: normal;
+  }
+
+#home .home-header .text.second-text {
+  white-space: nowrap;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* offerings component */
+
+#offerings .offerings-header, #work .work-header {
+  min-height: 10vh;
+}
+
+#offerings header h1, #work header h1 {
+  font-size: 1.75rem;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#offerings .offerings-container, #work header .work-container {
+  margin-top: 20vh;
+}
+
+#offerings .offerings-container .left, #offerings .offerings-container .right {
+  flex-direction: column;
+}
+
+#offerings .offering-item .desc-container,
+#offerings .offering-item .img-container {
+  width: 100%;
+  height: 60vh;
+  padding: 0 15px;
+}
+
+#offerings .offering-item .desc-container {
+  text-align: center;
+}
+
+#offerings .offering-item .desc-container span {
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+
+#offerings .offering-item .desc-container p {
+  font-size: 18px;
+  line-height: var(--height-large);
+  letter-spacing: 1.2px;
+}
+
+/* skills component */
+
+#skills {
+  min-height: 0;
+}
+
+#skills .logos {
+padding: 0;
+}
+
+/* work component */
+
+#work .work-header {
+  margin: 30vh;
+}
+
+#work .works-container .right, #work .works-container .left {
+  flex-direction: column;
+
+}
+
+#work .works-container .left .desc-container {
+  left: 0;
+}
+
+#work .works-container .right .desc-container {
+  right: 0;
+}
+
+#work .works-container .left .img-container {
+  margin-right: 0;
+}
+
+#work .works-container .right .img-container {
+  margin-left: 0;
+}
+
+#work .desc-container {
+  width: 100%;
+  height: 50vh;
+}
+
+#work .desc-container span {
+  font-size: 32px;
+}
+
+#work .desc-container .bg-container {
+  width: 300px;
+  height: 300px;
+}
+
+#work .work-item .img-container {
+  width: 100%;
+  height: 30vh;
+}
+
+#work .work-item .img-container .visit-btn-container a {
+ font-size: 16px;
+}
+
+/* contact component */
+
+.homepage-btn {
+  display: none;
+}
+
+#contact .contact-layout-container {
+  width: 100%;
+  height: unset;
+  min-height: unset;
+  max-height: unset;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 20vh;
+}
+
+#contact .contact-layout-container .contact-container,
+#contact .contact-layout-container .img-container {
+  width: 98%;
+  max-width: unset;
+  overflow: hidden;
+}
+
+#contact .contact-layout-container .contact-container {
+  height: unset;
+}
+
+#contact .contact-layout-container .img-container {
+  height: unset;
+  margin-top: 10vh;
+}
+
+#contact .contact-layout-container {
+  min-height: 80vh;
+  max-height: unset;
+}
+
+#contact article {
+  padding: 10px;
+  font-weight: bold;
+}
+
+#contact article ul, #contact article ul li {
+height: unset;
+min-height: 15vh;
+margin: 20px 0;
+}
+
+#contact article ul .moshe-info,
+#contact article ul .contact-info,
+#contact article ul .social-info {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+}
+
+#contact article ul .moshe-info span:first-child {
+  font-size: 24px;
+}
+
+/* email component */
+
+#email form {
+  height: unset;
+  min-height: 100vh;
+  margin-top: 10vh;
+  padding: 0;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+#email form .inputBox {
+  height: 30vh;
+}
+
+#email form .inputBox-container {
+  width: 100%;
+}
+
+#email form .inputBox input {
+  padding-left: 20px;
+  font-size: 22px;
+}
+
+#email form .inputBox input::placeholder {
+  font-size: 16px;
+   padding-left: 20px;
+}
+
+#email form .inputBoxBtn-Container {
+  width: 100%;
+  height: 300px;
+}
+
 }
