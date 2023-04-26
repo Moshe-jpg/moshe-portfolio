@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import chat from "../../assets/chat.png"
+// import RunHomeAnimation from "../../animations/RunHomeAnimation";
+import chat from "../../assets/chat.png";
 import Offerings from "../Offerings";
 import Work from "../Work";
 
@@ -8,7 +9,10 @@ const Home = (props) => {
 
   const textRef = useRef(null);
 
+  const HomeRef = useRef(null);
+
   useEffect(() => {
+    // RunHomeAnimation(HomeRef.current);
     const textArray = [
       { content: "Innovative Results" },
       { content: "Perfect Animations" },
@@ -49,20 +53,20 @@ const Home = (props) => {
       >
         <img src={chat} alt="Send Me A Message"></img>
       </button>
-      <section id="home">
+      <section id="home" ref={HomeRef}>
         <header className="home-header">
           <h1 title="Moshe Gadol" alt="Moshe Gadol">
             MG
           </h1>
-          <h2>
+          <h2 className="">
             {"< "}Front End Web Developer{" />"}
           </h2>
           <div className="container">
-            <span className="text first-text">
+            <span className="text first-text ">
               I Maximize Your Online Impact With
             </span>
             &nbsp;
-            <span className="text second-text" ref={textRef}>
+            <span className="text second-text " ref={textRef}>
               {/* Add ::before pseudo-element */}
               Phenomenal Details
               <span className="second-text__before"></span>

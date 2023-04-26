@@ -57,10 +57,11 @@ const Contact = (props) => {
       <section id="contact">
         <div className="contact-layout-container">
           <div className="contact-container">
+            
             <header className="contact-form-header">
               <h2>Contact Me</h2>
             </header>
-            <article>
+            <article><div className="cover"></div>
               <ul>
                 <li className="moshe-info">
                   <span className="moshe-name">Moshe Gadol</span>

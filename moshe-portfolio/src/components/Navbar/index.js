@@ -34,7 +34,8 @@ const Navbar = (props) => {
   return (
     <nav className="navbar">
       <a href="/moshe-portfolio">
-        <img src={favicon} alt="Home icon" className="navigation-logo"></img>
+        {/* <img src={favicon} alt="Home icon" className="navigation-logo"></img> */}
+        Gadol.Dev
       </a>
       <ul className={active}>
         <li

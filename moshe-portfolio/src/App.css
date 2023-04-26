@@ -53,6 +53,10 @@ button {
   all: unset;
 }
 
+article {
+  position: relative;
+}
+
 .transition {
   transition: 0.5s ease-in-out;
 }
@@ -98,6 +102,17 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
+  background-image: linear-gradient(
+    to right,
+    #db6400,
+    var(--black),
+    var(--orange)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
 }
 
 nav {
@@ -180,7 +195,7 @@ section {
 
 #home .home-header {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -207,6 +222,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    #db6400,
+    var(--black),
+    var(--orange)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 #home .home-header h1, #home .home-header h2, #home .home-header .container {
@@ -662,15 +686,26 @@ section {
   min-height: 100vh;
 }
 
+#contact .cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--dark-transparent);
+  z-index: -100;
+}
+
 #contact .contact-header {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#contact .contact-form-header {
+#contact .contact-form-header h2 {
   color: #ffffff;
   text-shadow: 1px 1px 1px var(--black);
+  z-index: 100;
 }
 
 #contact .contact-layout-container {
@@ -689,6 +724,7 @@ section {
   max-width: 650px;
   height: 100%;
   overflow: hidden;
+  z-index: 100;
 }
 
 #contact .contact-layout-container .img-container img {
@@ -785,6 +821,14 @@ section {
 
 #contact article ul .social-info .social-links a {
   margin-right: 10px;
+}
+
+#contact article ul .contact-info a, #contact article ul .social-info .social-links a {
+transition: 0.5s ease-in-out;
+}
+
+#contact article ul .contact-info a:hover, #contact article ul .social-info .social-links a:hover {
+  transform: scale(1.1);
 }
 
 /* email component */
@@ -1116,7 +1160,7 @@ padding: 0;
   max-height: unset;
   justify-content: space-evenly;
   flex-direction: column;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 #contact .contact-layout-container .contact-container,
