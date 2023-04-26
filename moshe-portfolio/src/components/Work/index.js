@@ -1,17 +1,23 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-
 import kiImg from "../../assets/ki-sr.webp";
+import kiMobile from "../../assets/ki-mobile.jpg";
 import mkImg from "../../assets/mk-sr.webp";
+import mkMobile from "../../assets/mk-mobile.jpg";
 import innerPatternImg from "../../assets/ip-sr.webp";
+import ipMobile from "../../assets/ip-mobile.jpg";
 import exerciseImg from "../../assets/rb-sr.webp";
+import rbMobile from "../../assets/rb-mobile.jpg";
+import click from "../../assets/click.png";
 
 const Work = (props) => {
   const { pages = [], setCurrentPage } = props;
+  const isMobile = window.innerWidth < 768;
 
   const works = [
     {
       imgSrc: kiImg,
+      imgMobile: kiMobile,
       name: "Kosher Innovations",
       site_href: "https://kosherinnovations.github.io/kosher-lamp/",
       repo_href: "https://github.com/KosherInnovations/kosher-lamp",
@@ -19,6 +25,7 @@ const Work = (props) => {
     },
     {
       imgSrc: mkImg,
+      imgMobile: mkMobile,
       name: "Mekor Chaim",
       site_href: "https://moshe-jpg.github.io/mekor-chaim/",
       repo_href: "https://github.com/moshe-jpg/mekor-chaim",
@@ -26,6 +33,7 @@ const Work = (props) => {
     },
     {
       imgSrc: innerPatternImg,
+      imgMobile: ipMobile,
       name: "InnerPattern",
       site_href: "http://innerpattern.herokuapp.com/",
       repo_href: "https://github.com/Tyl3r-s/InnerPattern",
@@ -33,6 +41,7 @@ const Work = (props) => {
     },
     {
       imgSrc: exerciseImg,
+      imgMobile: rbMobile,
       name: "Run Buddy",
       site_href: "https://moshe-jpg.github.io/run-buddy/",
       repo_href: "https://github.com/Moshe-jpg/run-buddy",
@@ -59,8 +68,17 @@ const Work = (props) => {
               </div>
             </div>
             <div className="img-container">
+              <img
+                id="click"
+                src={click}
+                alt="Click this container"
+              ></img>
               <LazyLoad height={200} offset={400}>
-                <img src={work.imgSrc} alt={work.text}></img>
+                <img
+                  src={isMobile ? work.imgMobile : work.imgSrc}
+                  alt={work.text}
+                  width="100"
+                ></img>
               </LazyLoad>
               <div className="visit-btn-container">
                 <a

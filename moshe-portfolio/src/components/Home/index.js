@@ -14,7 +14,7 @@ const Home = (props) => {
       { content: "Perfect Animations" },
       { content: "Responsive Designs" },
       { content: "Tailored Solutions" },
-      { content: "Custom Created SEO" },
+      // { content: "Custom Created SEO" },
     ];
 
     let currentIndex = 0;
@@ -52,7 +52,7 @@ const Home = (props) => {
       <section id="home">
         <header className="home-header">
           <h1 title="Moshe Gadol" alt="Moshe Gadol">
-            Moshe Gadol
+            MG
           </h1>
           <h2>
             {"< "}Front End Web Developer{" />"}

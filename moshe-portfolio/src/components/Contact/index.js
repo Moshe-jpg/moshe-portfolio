@@ -58,7 +58,7 @@ const Contact = (props) => {
         <div className="contact-layout-container">
           <div className="contact-container">
             <header className="contact-form-header">
-              <h2>We Should Connect</h2>
+              <h2>Contact Me</h2>
             </header>
             <article>
               <ul>

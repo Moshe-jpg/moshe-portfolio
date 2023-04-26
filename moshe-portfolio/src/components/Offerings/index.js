@@ -4,7 +4,7 @@ import Skills from "../Skills";
 import storyTellingImg from "../../assets/visual-storytelling.png";
 import responsiveImg from "../../assets/responsive.png";
 import animationImg from "../../assets/animation.png";
-import seoImg from "../../assets/seo.png";
+// import seoImg from "../../assets/seo.png";
 import speedImg from "../../assets/speed.png";
 
 const Offerings = () => {
@@ -33,14 +33,14 @@ const Offerings = () => {
       imgSrc: animationImg,
       altTag: "",
     },
-    {
-      title: "SEO Optimization",
-      description:
-        "Maximizing your visibility in search engines with effective SEO strategies",
-      textSide: "right",
-      imgSrc: seoImg,
-      altTag: "",
-    },
+    // {
+    //   title: "SEO Optimization",
+    //   description:
+    //     "Maximizing your visibility in search engines with effective SEO strategies",
+    //   textSide: "right",
+    //   imgSrc: seoImg,
+    //   altTag: "",
+    // },
     {
       title: "Lightning Fast Speeds",
       description:
