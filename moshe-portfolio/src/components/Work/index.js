@@ -1,14 +1,14 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
 import kiImg from "../../assets/ki-sr.webp";
-import kiMobile from "../../assets/ki-mobile.jpg";
+import kiMobile from "../../assets/ki-mobile.webp";
 import mkImg from "../../assets/mk-sr.webp";
-import mkMobile from "../../assets/mk-mobile.jpg";
+import mkMobile from "../../assets/mk-mobile.webp";
 import innerPatternImg from "../../assets/ip-sr.webp";
-import ipMobile from "../../assets/ip-mobile.jpg";
+import ipMobile from "../../assets/ip-mobile.webp";
 import exerciseImg from "../../assets/rb-sr.webp";
-import rbMobile from "../../assets/rb-mobile.jpg";
-import click from "../../assets/click.png";
+import rbMobile from "../../assets/rb-mobile.webp";
+import click from "../../assets/click.webp";
 
 const Work = (props) => {
   const { pages = [], setCurrentPage } = props;

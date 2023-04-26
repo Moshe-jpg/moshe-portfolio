@@ -1,11 +1,11 @@
 import React from "react";
-import back from "../../assets/back.png"
-import memoji from "../../assets/moshe-emoji.png";
+import back from "../../assets/back.webp"
+import memoji from "../../assets/moshe-emoji.webp";
 import EmailSection from "../EmailSection";
-import linkedin from "../../assets/linkedin.png";
-import github from "../../assets/github.png";
-import phone from "../../assets/phone.png";
-import gmail from "../../assets/gmail.png";
+import linkedin from "../../assets/linkedin.webp";
+import github from "../../assets/github.webp";
+import phone from "../../assets/phone.webp";
+import gmail from "../../assets/gmail.webp";
 
 const Contact = (props) => {
   const { pages = [], setCurrentPage } = props;

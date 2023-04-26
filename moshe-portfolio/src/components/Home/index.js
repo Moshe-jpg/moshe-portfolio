@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 // import RunHomeAnimation from "../../animations/RunHomeAnimation";
-import chat from "../../assets/chat.png";
+import chat from "../../assets/chat.webp";
 import Offerings from "../Offerings";
 import Work from "../Work";
 

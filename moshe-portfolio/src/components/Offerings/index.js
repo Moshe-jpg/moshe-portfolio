@@ -1,11 +1,11 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
 import Skills from "../Skills";
-import storyTellingImg from "../../assets/visual-storytelling.png";
-import responsiveImg from "../../assets/responsive.png";
-import animationImg from "../../assets/animation.png";
-// import seoImg from "../../assets/seo.png";
-import speedImg from "../../assets/speed.png";
+import storyTellingImg from "../../assets/visual-storytelling.webp";
+import responsiveImg from "../../assets/responsive.webp";
+import animationImg from "../../assets/animation.webp";
+// import seoImg from "../../assets/seo.webp";
+import speedImg from "../../assets/speed.webp";
 
 const Offerings = () => {
   const offerings = [

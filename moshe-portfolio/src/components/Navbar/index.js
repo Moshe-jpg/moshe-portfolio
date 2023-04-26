@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import favicon from "../../assets/favicon.ico";
-import menuBar from "../../assets/menu.png";
+// import favicon from "../../assets/favicon.ico";
+import menuBar from "../../assets/menu.webp";
 
 const Navbar = (props) => {
   const { pages = [], setCurrentPage } = props;
