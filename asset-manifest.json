@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moshe-portfolio/static/css/main.0906bdb1.css",
-    "main.js": "/moshe-portfolio/static/js/main.965bedb1.js",
+    "main.css": "/moshe-portfolio/static/css/main.e42979ca.css",
+    "main.js": "/moshe-portfolio/static/js/main.c362ede4.js",
     "static/js/787.6dbf52a7.chunk.js": "/moshe-portfolio/static/js/787.6dbf52a7.chunk.js",
     "static/media/ip-sr.webp": "/moshe-portfolio/static/media/ip-sr.77de7229eb4aa722ea8a.webp",
     "static/media/responsive.webp": "/moshe-portfolio/static/media/responsive.22f11d9c0a751fadbd72.webp",
@@ -39,12 +39,12 @@
     "static/media/bootstrap.webp": "/moshe-portfolio/static/media/bootstrap.77da628a11043fdf436b.webp",
     "static/media/html.webp": "/moshe-portfolio/static/media/html.365c7a4931dbbae98297.webp",
     "index.html": "/moshe-portfolio/index.html",
-    "main.0906bdb1.css.map": "/moshe-portfolio/static/css/main.0906bdb1.css.map",
-    "main.965bedb1.js.map": "/moshe-portfolio/static/js/main.965bedb1.js.map",
+    "main.e42979ca.css.map": "/moshe-portfolio/static/css/main.e42979ca.css.map",
+    "main.c362ede4.js.map": "/moshe-portfolio/static/js/main.c362ede4.js.map",
     "787.6dbf52a7.chunk.js.map": "/moshe-portfolio/static/js/787.6dbf52a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0906bdb1.css",
-    "static/js/main.965bedb1.js"
+    "static/css/main.e42979ca.css",
+    "static/js/main.c362ede4.js"
   ]
 }
