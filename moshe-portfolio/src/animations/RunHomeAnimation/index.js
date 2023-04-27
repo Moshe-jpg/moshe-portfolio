@@ -1,31 +1,32 @@
-// import gsap, { Power3 } from "gsap";
-// import ScrollTrigger from "gsap/ScrollTrigger";
+import gsap, { Power3 } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
-// const RunHomeAnimation = () => {
-//   gsap.registerPlugin(ScrollTrigger, Power3);
+const RunHomeAnimation = () => {
+  gsap.registerPlugin(ScrollTrigger, Power3);
 
-//   const headers = gsap.utils.toArray("#home .text-reveal");
+  const tl = gsap.timeline();
 
-//   const tl = gsap.timeline();
+  let mm = gsap.matchMedia();
 
-//    headers.forEach((header) => {
-//      tl.to(
-//        header,
-//        {
-//          yPercent: -100,
-//          stagger: 0.15,
-//          ease: Power3.easeInOut,
-//          duration: 1,
-//        },
-//        ".75"
-//      );
-//    });
+  mm.add("(max-width: 768px)", () => {
+    tl.to("#home  h1 span", {
+      duration: 1.5,
+      autoAlpha: 1,
+      ease: Power3,
+      transform: "translateY(0)",
+    })
+      .to("#home .home-header h2 span", {
+        duration: 1,
+        autoAlpha: 1,
+        ease: Power3,
+        transform: "translateY(0)",
+      })
+      .to("#home .home-header .container", {
+        duration: 2.5,
+        autoAlpha: 1,
+        ease: Power3,
+      });
+  });
+};
 
-// //   tl.to(headers, {
-// //     yPercent: 0,
-// //     stagger: 0.5,
-// //     duration: 1,
-// //   });
-// };
-
-// export default RunHomeAnimation;
+export default RunHomeAnimation;

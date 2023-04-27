@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-// import RunHomeAnimation from "../../animations/RunHomeAnimation";
+import RunHomeAnimation from "../../animations/RunHomeAnimation";
 import chat from "../../assets/chat.webp";
 import Offerings from "../Offerings";
 import Work from "../Work";
@@ -12,7 +12,7 @@ const Home = (props) => {
   const HomeRef = useRef(null);
 
   useEffect(() => {
-    // RunHomeAnimation(HomeRef.current);
+    RunHomeAnimation(HomeRef.current);
     const textArray = [
       { content: "Innovative Results" },
       { content: "Perfect Animations" },
@@ -56,10 +56,10 @@ const Home = (props) => {
       <section id="home" ref={HomeRef}>
         <header className="home-header">
           <h1 title="Moshe Gadol" alt="Moshe Gadol">
-            MG
+            <span className="text-reveal">MG</span>
           </h1>
           <h2 className="">
-            {"< "}Front End Web Developer{" />"}
+          <span>{"< "}Front End Web Developer{" />"}</span>  
           </h2>
           <div className="container">
             <span className="text first-text ">

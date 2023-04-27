@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import RunOfferingsAnimation from "../../animations/RunOfferingsAnimation";
 import LazyLoad from "react-lazyload";
 import Skills from "../Skills";
 import storyTellingImg from "../../assets/visual-storytelling.webp";
@@ -8,6 +9,12 @@ import animationImg from "../../assets/animation.webp";
 import speedImg from "../../assets/speed.webp";
 
 const Offerings = () => {
+  const OfferingRef = useRef(null);
+
+  useEffect(() => {
+    RunOfferingsAnimation(OfferingRef.current);
+  }, []);
+
   const offerings = [
     {
       title: "Visual Storytelling",
@@ -54,14 +61,16 @@ const Offerings = () => {
   return (
     <section id="offerings">
       <header className="offerings-header">
-        <h1>What Do I Offer?</h1>
+        <h1>
+          <span>What Do I Offer?</span>
+        </h1>
       </header>
 
       <ul className="offerings-container">
         {offerings.map((offering, index) => (
           <li key={index} className={`offering-item ${offering.textSide}`}>
             <div className="desc-container">
-              <span>{offering.title}</span>
+              <header>{offering.title}</header>
               <p>{offering.description}</p>
             </div>
             <div className="img-container">
