@@ -22,7 +22,7 @@ const Offerings = () => {
         "Creating powerful visual narratives that convey your brand's message",
       textSide: "left",
       imgSrc: storyTellingImg,
-      altTag: "",
+      altTag: "Visual Storytelling",
     },
     {
       title: "Responsive Designs",
@@ -30,7 +30,7 @@ const Offerings = () => {
         "Transforming website layouts to fit any screen size with ease",
       textSide: "right",
       imgSrc: responsiveImg,
-      altTag: "",
+      altTag: "Responsive Designs",
     },
     {
       title: "Flawless Animations",
@@ -38,7 +38,7 @@ const Offerings = () => {
         "Adding a touch of magic to your website with stunning animations",
       textSide: "left",
       imgSrc: animationImg,
-      altTag: "",
+      altTag: "Flawless Animations",
     },
     // {
     //   title: "SEO Optimization",
@@ -46,7 +46,7 @@ const Offerings = () => {
     //     "Maximizing your visibility in search engines with effective SEO strategies",
     //   textSide: "right",
     //   imgSrc: seoImg,
-    //   altTag: "",
+    //   altTag: "SEO Optimization",
     // },
     {
       title: "Lightning Fast Speeds",
@@ -54,7 +54,7 @@ const Offerings = () => {
         "Optimizing your site for speed to ensure a smooth user experience",
       textSide: "left",
       imgSrc: speedImg,
-      altTag: "",
+      altTag: "Lightning Fast Speeds",
     },
   ];
 
