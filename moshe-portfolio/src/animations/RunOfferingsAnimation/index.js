@@ -5,8 +5,11 @@ const RunOfferingsAnimation = () => {
   gsap.registerPlugin(ScrollTrigger, Power3);
 
   const headerElem = document.querySelector("#offerings header h1 span");
-  const hiddenTextLower = gsap.utils.toArray("#offerings header .from-lower");
-  const hiddenTextUpper = gsap.utils.toArray("#offerings p .from-upper");
+  const hiddenTextLower = gsap.utils.toArray("#offerings header span");
+  const hiddenTextUpper = gsap.utils.toArray("#offerings p span");
+  const imgElems = gsap.utils.toArray(
+    "#offerings .offering-item .img-container img"
+  );
 
   //   const tl = gsap.timeline();
 
@@ -27,13 +30,13 @@ const RunOfferingsAnimation = () => {
 
     hiddenTextLower.forEach((text) => {
       gsap.to(text, {
-        duration: 3,
+        duration: 1,
         autoAlpha: 1,
         transform: "translateY(0)",
         scrollTrigger: {
           trigger: text,
-          start: "top 90%",
-          end: "top 85%",
+          start: "top 85%",
+          end: "top 75%",
           once: true,
         },
       });
@@ -46,8 +49,23 @@ const RunOfferingsAnimation = () => {
         transform: "translateY(0)",
         scrollTrigger: {
           trigger: text,
-          start: "top 90%",
-          end: "top 85%",
+          start: "top 65%",
+          end: "top 55%",
+          once: true,
+        },
+      });
+    });
+    imgElems.forEach((img) => {
+      gsap.to(img, {
+        duration: 1.5,
+        // autoAlpha: 1,
+        // opacity: 1,
+        // transform: "scale(1)",
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        scrollTrigger: {
+          trigger: img,
+          start: "top 95%",
+          end: "top 75%",
           once: true,
         },
       });
