@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import RunOfferingsAnimation from "../../animations/RunOfferingsAnimation";
-// import LazyLoad from "react-lazyload";
 import Skills from "../Skills";
 import storyTellingImg from "../../assets/visual-storytelling.webp";
 import responsiveImg from "../../assets/responsive.webp";
@@ -90,13 +89,11 @@ const Offerings = () => {
               <p className={`${offering.pNumber}`}><span>{offering.description}</span></p>
             </div>
             <div className="img-container">
-              {/* <LazyLoad height={600} offset={00}> */}
                 <img
                   src={offering.imgSrc}
                   alt={offering.altTag}
                   className={`${offering.imgNumber}`}
                 ></img>
-              {/* </LazyLoad> */}
             </div>
           </li>
         ))}
