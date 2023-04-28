@@ -21,8 +21,7 @@ const RunHomeAnimation = () => {
         ease: Power3,
         transform: "translateY(0)",
       })
-      .to("#home .home-header .container", {
-        duration: 2.5,
+      .to("#home .home-header .container", 3, {
         autoAlpha: 1,
         ease: Power3,
       });

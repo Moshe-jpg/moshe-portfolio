@@ -1,5 +1,6 @@
-import React from "react";
-import LazyLoad from "react-lazyload";
+import React, { useRef, useEffect } from "react";
+import RunWorkAnimation from "../../animations/RunWorkAnimation";
+// import LazyLoad from "react-lazyload";
 import kiImg from "../../assets/ki-sr.webp";
 import kiMobile from "../../assets/ki-mobile.webp";
 import mkImg from "../../assets/mk-sr.webp";
@@ -13,6 +14,12 @@ import click from "../../assets/click.webp";
 const Work = (props) => {
   const { pages = [], setCurrentPage } = props;
   const isMobile = window.innerWidth < 768;
+
+  const WorkRef = useRef(null);
+
+  useEffect(() => {
+    RunWorkAnimation(WorkRef.current);
+  }, []);
 
   const works = [
     {
@@ -55,7 +62,7 @@ const Work = (props) => {
   };
 
   return (
-    <section id="work">
+    <section id="work" ref={WorkRef}>
       <header className="work-header">
         <h1>My Work</h1>
       </header>
@@ -64,22 +71,19 @@ const Work = (props) => {
           <li key={index} className={`work-item ${work.textSide}`}>
             <div className="desc-container">
               <div className="bg-container">
-                <span>{work.name}</span>
+                <h4>{work.name}</h4>
               </div>
             </div>
             <div className="img-container">
+              <img id="click" src={click} alt="Click this container"></img>
+              {/* <LazyLoad height={200} offset={400}> */}
               <img
-                id="click"
-                src={click}
-                alt="Click this container"
+                className="desc-container-img"
+                src={isMobile ? work.imgMobile : work.imgSrc}
+                alt={work.text}
+                width="100"
               ></img>
-              <LazyLoad height={200} offset={400}>
-                <img
-                  src={isMobile ? work.imgMobile : work.imgSrc}
-                  alt={work.text}
-                  width="100"
-                ></img>
-              </LazyLoad>
+              {/* </LazyLoad> */}
               <div className="visit-btn-container">
                 <a
                   href={work.site_href}

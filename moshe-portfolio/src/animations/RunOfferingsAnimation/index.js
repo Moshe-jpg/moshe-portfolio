@@ -35,8 +35,8 @@ const RunOfferingsAnimation = () => {
         transform: "translateY(0)",
         scrollTrigger: {
           trigger: text,
-          start: "top 85%",
-          end: "top 75%",
+          start: "top 90%",
+          end: "top 80%",
           once: true,
         },
       });
@@ -58,9 +58,7 @@ const RunOfferingsAnimation = () => {
     imgElems.forEach((img) => {
       gsap.to(img, {
         duration: 1.5,
-        // autoAlpha: 1,
-        // opacity: 1,
-        // transform: "scale(1)",
+        ease: Power3,
         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
         scrollTrigger: {
           trigger: img,

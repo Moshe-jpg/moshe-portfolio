@@ -18,7 +18,7 @@ const Home = (props) => {
       { content: "Perfect Animations" },
       { content: "Responsive Designs" },
       { content: "Tailored Solutions" },
-      // { content: "Custom Created SEO" },
+      { content: "Excellent SEO Plan" },
     ];
 
     let currentIndex = 0;
