@@ -56,9 +56,9 @@ const Work = (props) => {
     },
   ];
 
-  const scrollToContact = () => {
-    const contactElement = document.getElementById("contact");
-    contactElement.scrollIntoView({ behavior: "smooth" });
+  const scrollToTop = () => {
+    const homeElement = document.getElementById("home");
+    homeElement.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -101,11 +101,9 @@ const Work = (props) => {
       <div className="lets-talk-btn">
         <button
           onClick={() => {
+            scrollToTop();
             setTimeout(() => {
               setCurrentPage(pages[1]);
-              setTimeout(() => {
-                scrollToContact();
-              }, 500);
             }, 1000);
           }}
         >

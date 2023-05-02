@@ -32,9 +32,9 @@ const Home = (props) => {
     };
   }, []);
 
-  const scrollToEmail = () => {
-    const emailElement = document.getElementById("email");
-    emailElement.scrollIntoView({ behavior: "smooth" });
+  const scrollToTop = () => {
+    const homeElement = document.getElementById("home");
+    homeElement.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -43,11 +43,9 @@ const Home = (props) => {
         className="message-btn"
         aria-label="Send Me A Message"
         onClick={() => {
+          scrollToTop();
           setTimeout(() => {
             setCurrentPage(pages[1]);
-            setTimeout(() => {
-              scrollToEmail();
-            }, 500);
           }, 1000);
         }}
       >

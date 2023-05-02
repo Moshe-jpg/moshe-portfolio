@@ -687,7 +687,7 @@ section {
 /* contact component */
 
 .homepage-btn,
-.message-btn {
+.message-btn, .inputBoxBtn {
   z-index: 999;
   animation: throb 1.5s infinite alternate;
 }
@@ -792,9 +792,7 @@ section {
 }
 
 #contact .contact-layout-container .contact-container {
-  background-image: url("./assets/orange-3.webp");
-  background-position: 50%;
-  background-size: cover;
+  background: rgba(2, 2, 25, 0.9);
   /* backdrop-filter: blur(5px); */
   border-radius: 5px;
 }
@@ -809,7 +807,7 @@ section {
 
 #contact article {
   padding: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 16px;
   color: var(--white);
 }
@@ -852,8 +850,8 @@ section {
   margin: 5px 0;
 }
 
-#contact article ul .moshe-info span:first-child {
-  font-size: 20px;
+#contact article ul .moshe-name {
+  font-size: 34px;
 }
 
 #contact article ul .contact-info a {
@@ -1056,6 +1054,24 @@ section {
     font-size: 2.5rem;
     width: 95vw;
     height: auto;
+  }
+
+   /* contact component animations */
+
+  #contact .contact-container {
+    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
+  }
+
+  #contact .moshe-emoji {
+    transform: scale(0) translateY(50%);
+  }
+
+  #email form {
+    transform: translateY(50%);
+  }
+
+  #email form .inputBox-container .spacer {
+    width: 0;
   }
 
   /*  */
@@ -1344,13 +1360,12 @@ section {
 
   #contact article {
     padding: 10px;
-    font-weight: bold;
   }
 
   #contact article ul,
   #contact article ul li {
     height: unset;
-    min-height: 15vh;
+    /* min-height: 15vh; */
     margin: 20px 0;
   }
 
@@ -1366,7 +1381,7 @@ section {
   }
 
   #contact article ul .moshe-info span:first-child {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   /* email component */
