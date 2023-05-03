@@ -69,16 +69,22 @@ const Contact = (props) => {
               <div className="cover"></div>
               <ul>
                 <li className="moshe-info">
-                  <span className="moshe-name">Moshe Gadol</span>
-                  <span>Toronto, Ontario</span>
-                  <span>Canada</span>
+                  <span className="moshe-name reveal-paragraph">
+                    Moshe Gadol
+                  </span>
+                  <span className="reveal-paragraph">Toronto, Ontario</span>
+                  <span className="reveal-paragraph">Canada</span>
                 </li>
-                <li className="contact-info">
-                  <a href={imgArray[2].href}>647-571-2494</a>
-                  <a href={imgArray[3].href}>Mobgadol@gmail.com</a>
+                <li className="contact-info reveal-paragraph">
+                  <a href={imgArray[2].href} >
+                    647-571-2494
+                  </a>
+                  <a href={imgArray[3].href}>
+                    Mobgadol@gmail.com
+                  </a>
                 </li>
                 <li className="social-info">
-                  <span>
+                  <span className="reveal-paragraph">
                     You can also connect with me on LinkedIn or check out my
                     Github:
                   </span>

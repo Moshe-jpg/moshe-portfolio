@@ -8,6 +8,9 @@ const RunContactAnimation = () => {
 
   let mm = gsap.matchMedia();
 
+  const paragraphs = gsap.utils.toArray(
+    "#contact article ul .reveal-paragraph"
+  );
   const lines = gsap.utils.toArray("#email form .inputBox-container .spacer");
 
   mm.add("(max-width: 768px)", () => {
@@ -15,6 +18,25 @@ const RunContactAnimation = () => {
       duration: 1.5,
       ease: Power3,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    }).to("#contact .contact-form-header h2", {
+      duration: 1.5,
+      ease: Power3,
+      transform: "translateY(0)",
+    }, 0.5);
+
+    paragraphs.forEach((paragraph) => {
+      gsap.to(paragraph, {
+        duration: 1.5,
+        autoAlpha: 1,
+        transform: "scale(1)",
+        scrollTrigger: {
+          trigger: paragraph,
+          start: "top 60%",
+          end: "top 50%",
+          scrub: 2.5,
+          once: true,
+        },
+      });
     });
 
     gsap.to("#contact .moshe-emoji", {
@@ -28,18 +50,7 @@ const RunContactAnimation = () => {
         once: true,
       },
     });
-    gsap.to("#email form", {
-      duration: 1.5,
-      ease: Power3,
-      transform: "translateY(0)",
-      scrollTrigger: {
-        trigger: "#email form",
-        start: "top 80%",
-        end: "top 70%",
-        scrub: 2.5,
-        once: true,
-      },
-    });
+
     lines.forEach((line) => {
       gsap.to(line, {
         duration: 1.5,
@@ -47,8 +58,8 @@ const RunContactAnimation = () => {
         width: "90%",
         scrollTrigger: {
           trigger: line,
-          start: "top 90%",
-          end: "top 80%",
+          start: "top 80%",
+          end: "top 70%",
           scrub: 2.5,
           once: true,
         },

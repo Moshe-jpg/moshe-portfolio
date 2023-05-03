@@ -756,6 +756,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 #contact .contact-form-header h2 {
@@ -911,7 +912,7 @@ section {
 
 #email form .inputBox-container .spacer {
   width: 90%;
-  height: 1px;
+  height: 2px;
   background: var(--orange);
 }
 
@@ -1081,6 +1082,59 @@ section {
     width: auto;
     height: 60vh;
   }
+
+  /* contact component */
+
+  .homepage-btn {
+    top: 15%;
+  }
+
+  #contact .contact-layout-container {
+    flex-direction: column;
+    height: unset;
+    min-height: 100vh;
+    max-height: 150vh;
+    margin-top: 5vh;
+  }
+
+  #contact .contact-layout-container .contact-container, #contact .contact-layout-container .img-container {
+    width: 80vw;
+    max-width: 850px;
+    height: auto;
+  }
+
+  #contact article ul .moshe-info, #contact article ul .contact-info, #contact article ul .social-info {
+    margin: 15px 0;
+  }
+
+  /* email component */
+
+  #email form {
+    flex-direction: column;
+  }
+
+   #email form .inputBox {
+    height: 30vh;
+  }
+
+  #email form .inputBox-container {
+    width: 100%;
+  }
+
+  #email form .inputBox input {
+    padding-left: 20px;
+    font-size: 28px;
+  }
+
+  #email form .inputBox input::placeholder {
+    font-size: 36px;
+    padding-left: 20px;
+  }
+
+  #email form .inputBoxBtn-Container {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1143,13 +1197,17 @@ section {
   #contact .contact-container {
     clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
   }
+  
+  #contact .contact-form-header h2 {
+    transform: translateY(-150%);
+  }
+
+  #contact .reveal-paragraph {
+    transform: scale(0);
+  }
 
   #contact .moshe-emoji {
     transform: scale(0) translateY(50%);
-  }
-
-  #email form {
-    transform: translateY(50%);
   }
 
   #email form .inputBox-container .spacer {
@@ -1383,10 +1441,14 @@ section {
     height: 350px;
   }
 
-  #work .work-item .img-container {
+  /* #work .work-item .img-container {
     width: 100%;
-    height: unset;
-  }
+    height: 100vh;
+  } */
+
+   #work .works-container .right .img-container,  #work .works-container .left .img-container {
+    height: 100vh;
+   }
 
   #work .work-item .img-container .visit-btn-container a {
     font-size: 16px;
