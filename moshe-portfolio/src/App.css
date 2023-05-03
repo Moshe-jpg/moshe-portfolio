@@ -87,8 +87,6 @@ article {
   z-index: 600;
 }
 
-
-
 /* navbar styling */
 
 .navbar {
@@ -687,7 +685,8 @@ section {
 /* contact component */
 
 .homepage-btn,
-.message-btn, .inputBoxBtn {
+.message-btn,
+.inputBoxBtn {
   z-index: 999;
   animation: throb 1.5s infinite alternate;
 }
@@ -999,6 +998,89 @@ section {
     opacity: 0.9;
     transition: 0.5s ease-in-out;
   }
+
+  /* home component */
+
+  #home .home-header .container .first-text {
+    display: block;
+    font-weight: normal;
+  }
+
+  #home .home-header .text.second-text {
+    white-space: nowrap;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  /* offerings component */
+
+  #offerings .offerings-header {
+    min-height: 50vh;
+  }
+
+  #offerings .offerings-container .left,
+  #offerings .offerings-container .right {
+    flex-direction: column;
+  }
+
+  #offerings .offering-item .desc-container {
+    height: 60vh;
+    width: 100%;
+  }
+
+  #offerings .offering-item .desc-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  #offerings .offering-item .desc-container p {
+    padding: 0 15px;
+  }
+
+  #offerings .offering-item .img-container {
+    width: 100%;
+  }
+
+  /* work component */
+
+  #work .work-header {
+    min-height: 50vh;
+  }
+
+  #work .works-container .right,
+  #work .works-container .left {
+    flex-direction: column;
+  }
+
+  #work .works-container .right .desc-container {
+    right: 0;
+  }
+
+  #work .works-container .left .desc-container {
+    left: 0;
+  }
+
+  #work .desc-container {
+    width: 100%;
+    height: 50vh;
+    margin: 0 0 150px;
+  }
+
+  #work .works-container .last {
+    margin: 0;
+  }
+
+  #work .works-container .right .img-container {
+    margin-left: 0;
+    width: auto;
+    height: 60vh;
+  }
+
+  #work .works-container .left .img-container {
+    margin-right: 0;
+    width: auto;
+    height: 60vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1056,7 +1138,7 @@ section {
     height: auto;
   }
 
-   /* contact component animations */
+  /* contact component animations */
 
   #contact .contact-container {
     clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);

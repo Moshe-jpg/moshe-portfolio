@@ -52,7 +52,7 @@ const Work = (props) => {
       name: "Run Buddy",
       site_href: "https://moshe-jpg.github.io/run-buddy/",
       repo_href: "https://github.com/Moshe-jpg/run-buddy",
-      textSide: "left",
+      textSide: "left last",
     },
   ];
 
