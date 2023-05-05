@@ -24,6 +24,7 @@ function App() {
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
       />
+      <div id="top"></div>
       <main>
         <Page
           pages={pages}

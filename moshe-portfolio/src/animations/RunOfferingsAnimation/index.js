@@ -15,7 +15,11 @@ const RunOfferingsAnimation = () => {
 
   let mm = gsap.matchMedia();
 
-  mm.add("(max-width: 768px)", () => {
+  mm.add("(min-width: 999.1px)", () => { 
+
+  })
+
+  mm.add("(max-width: 999px)", () => {
     gsap.to(headerElem, {
       duration: 1,
       autoAlpha: 1,
@@ -57,12 +61,13 @@ const RunOfferingsAnimation = () => {
     });
     imgElems.forEach((img) => {
       gsap.to(img, {
-        duration: 1.5,
+        autoAlpha: 1,
         ease: Power3,
+        duration: 1.5,
         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
         scrollTrigger: {
           trigger: img,
-          start: "top 95%",
+          start: "top 90%",
           end: "top 75%",
           once: true,
         },

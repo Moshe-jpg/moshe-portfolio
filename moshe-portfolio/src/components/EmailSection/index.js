@@ -42,7 +42,7 @@ const EmailSection = () => {
               type="name"
               name="user_name"
               required="required"
-              placeholder="* My Name Is"
+              placeholder="* Name"
             />
           </div>
           <div className="spacer"></div>
@@ -51,7 +51,7 @@ const EmailSection = () => {
               type="email"
               name="user_email"
               required="required"
-              placeholder="* My Email Address Is"
+              placeholder="* Email Address"
             />
           </div>
           <div className="spacer"></div>
@@ -61,7 +61,7 @@ const EmailSection = () => {
               name="message"
               required="required"
               className="inputBox-message-input"
-              placeholder="* I'm Reaching Out Because"
+              placeholder="* I'm Reaching Out Because..."
             />
           </div>
           <div className="spacer"></div>

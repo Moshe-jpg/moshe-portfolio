@@ -20,6 +20,7 @@ const Offerings = () => {
       description:
         "Creating powerful visual narratives that convey your brand's message",
       textSide: "left",
+      imgSide: "right",
       imgSrc: storyTellingImg,
       altTag: "Visual Storytelling",
       headerNumber: "one",
@@ -31,6 +32,7 @@ const Offerings = () => {
       description:
         "Transforming website layouts to fit any screen size with ease",
       textSide: "right",
+      imgSide: "left",
       imgSrc: responsiveImg,
       altTag: "Responsive Designs",
       headerNumber: "two",
@@ -42,6 +44,7 @@ const Offerings = () => {
       description:
         "Adding a touch of magic to your website with stunning animations",
       textSide: "left",
+      imgSide: "right",
       imgSrc: animationImg,
       altTag: "Flawless Animations",
       headerNumber: "three",
@@ -53,6 +56,7 @@ const Offerings = () => {
       description:
         "Maximizing your visibility in search engines with effective SEO strategies",
       textSide: "right",
+      imgSide: "left",
       imgSrc: seoImg,
       altTag: "SEO Optimization",
       headerNumber: "four",
@@ -64,6 +68,7 @@ const Offerings = () => {
       description:
         "Optimizing your site for speed to ensure a smooth user experience",
       textSide: "left",
+      imgSide: "right",
       imgSrc: speedImg,
       altTag: "Lightning Fast Speeds",
       headerNumber: "five",
@@ -92,7 +97,7 @@ const Offerings = () => {
                 <img
                   src={offering.imgSrc}
                   alt={offering.altTag}
-                  className={`${offering.imgNumber}`}
+                  className={`${offering.imgSide}`}
                 ></img>
             </div>
           </li>

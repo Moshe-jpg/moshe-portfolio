@@ -26,9 +26,9 @@ const Navbar = (props) => {
     homeElement.scrollIntoView({ behavior: "smooth" });
   };
 
-  const scrollToContact = () => {
-    const contactElement = document.getElementById("contact");
-    contactElement.scrollIntoView({ behavior: "smooth" });
+  const scrollToTop = () => {
+    const top = document.getElementById("top");
+    top.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -44,6 +44,7 @@ const Navbar = (props) => {
             setActive("nav-menu");
             turned("menu-btn");
             setTimeout(() => {
+              scrollToTop();
               setCurrentPage(pages[0]);
               setTimeout(() => {
                 scrollToHome();
@@ -62,6 +63,7 @@ const Navbar = (props) => {
             setActive("nav-menu");
             turned("menu-btn");
             setTimeout(() => {
+              scrollToTop();
               setCurrentPage(pages[0]);
               setTimeout(() => {
                 scrollToWork();
@@ -79,11 +81,9 @@ const Navbar = (props) => {
           onClick={() => {
             setActive("nav-menu");
             turned("menu-btn");
+            scrollToTop();
             setTimeout(() => {
               setCurrentPage(pages[1]);
-              setTimeout(() => {
-                scrollToContact();
-              }, 500);
             }, 1000);
           }}
           title="Let's Talk"

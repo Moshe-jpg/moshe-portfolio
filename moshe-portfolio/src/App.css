@@ -269,7 +269,7 @@ section {
 
 /* Update the styles for .second-text element */
 #home .home-header .text.second-text {
-  position: relative; /* Add relative position to establish a new stacking context for ::before pseudo-element */
+  position: relative;
   overflow: hidden;
   color: var(--orange);
 }
@@ -339,7 +339,7 @@ section {
 }
 
 #offerings .offerings-container {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -365,7 +365,7 @@ section {
 
 #offerings .offering-item .desc-container,
 #offerings .offering-item .img-container {
-  width: 40%;
+  width: 45%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -382,7 +382,7 @@ section {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
@@ -420,6 +420,14 @@ section {
   justify-content: center;
 }
 
+#offerings .offering-item .img-container .right {
+  align-self: flex-end;
+}
+
+#offerings .offering-item .img-container .left {
+  align-self: flex-start;
+}
+
 #offerings .offering-item .img-container img {
   width: 70%;
 }
@@ -436,7 +444,7 @@ section {
 
 #skills .logos {
   overflow: hidden;
-  padding: 60px 0;
+  margin-top: 20vh;
   white-space: nowrap;
   position: relative;
 }
@@ -581,8 +589,8 @@ section {
   border: 1px solid var(--orange);
   border-radius: 50%;
   padding: 50px 20px;
-  width: 400px; /* or whatever width you want */
-  height: 400px; /* or whatever height you want */
+  width: 400px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -802,6 +810,7 @@ section {
   text-align: center;
   padding: 20px 0;
   font-size: 22px;
+  background: var(--orange);
   border-bottom: 1px solid var(--white);
 }
 
@@ -918,7 +927,7 @@ section {
 
 #email form .inputBox {
   width: 100%;
-  height: 30%;
+  height: 31%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -968,7 +977,129 @@ section {
   border: 1px solid var(--white);
 }
 
-@media screen and (max-width: 900px) {
+/* laptop sized animation settings */
+
+@media screen and (min-width: 999.1px) {
+  #home .home-header h1 span {
+    visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotate3d(1, 1, 1, 120deg);
+  }
+
+  #home .home-header h2 span {
+    visibility: hidden;
+    transform: translateX(110%);
+  }
+
+  #home .home-header .container {
+    overflow: hidden;
+  }
+
+  #home .home-header .container span {
+    visibility: hidden;
+  }
+
+}
+
+@media screen and (max-width: 999px) {
+  /* 
+starting position for middle to top and bottom
+.element {
+  clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%); 
+  transition: clip-path 1s ease-out; 
+}
+
+end position
+.element:hover {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+} 
+
+starting position for center to outwards all directions
+.element {
+  clip-path: circle(0% at 50% 50%);
+  transition: clip-path 1s ease-out; 
+}
+
+end position
+.element:hover {
+  clip-path: circle(100% at 50% 50%);
+}
+*/
+
+  /* animations */
+
+  /* home component animations */
+
+  #home .home-header h1,
+  #home .home-header h2 {
+    overflow: hidden;
+  }
+
+  #home h1 span {
+    visibility: hidden;
+    transform: translateY(-150%);
+  }
+
+  #home .home-header h2 span {
+    visibility: hidden;
+    white-space: nowrap;
+  }
+
+  #home .home-header .container {
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  /* offerings component animations */
+
+  #offerings header h1 span {
+    transform: translateY(150%);
+  }
+
+  #offerings .offering-item .desc-container header span {
+    transform: translateY(100%);
+  }
+
+  #offerings .offering-item .desc-container p span {
+    transform: translateY(-110%);
+  }
+
+  #offerings .offering-item .img-container img {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+  }
+
+  /* work component animations */
+
+  #work header h1 {
+    transform: translateY(120%);
+  }
+
+  #work .desc-container .bg-container {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+    transform: rotate(180deg);
+  }
+
+  #work .img-container img {
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  /* contact component animations */
+
+  #contact .contact-container {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+  }
+
+  #contact .moshe-emoji {
+    transform: scale(0) translateY(50%);
+  }
+
+  #email form .inputBox-container .spacer {
+    width: 0;
+  }
+
+  /*  */
+
   .navbar {
     position: relative;
     top: 0;
@@ -1002,6 +1133,14 @@ section {
 
   /* home component */
 
+  #home .home-header h1 {
+    flex-basis: 45vh;
+  }
+
+  #home .home-header .container .text {
+    margin: 0;
+  }
+
   #home .home-header .container .first-text {
     display: block;
     font-weight: normal;
@@ -1016,7 +1155,8 @@ section {
   /* offerings component */
 
   #offerings .offerings-header {
-    min-height: 50vh;
+    min-height: 20vh;
+    margin: 10vh 0;
   }
 
   #offerings .offerings-container .left,
@@ -1027,11 +1167,11 @@ section {
   #offerings .offering-item .desc-container {
     height: 60vh;
     width: 100%;
+    text-align: center;
   }
 
-  #offerings .offering-item .desc-container {
-    width: 100%;
-    text-align: center;
+  #offerings .offering-item .desc-container header {
+    justify-content: center;
   }
 
   #offerings .offering-item .desc-container p {
@@ -1039,13 +1179,20 @@ section {
   }
 
   #offerings .offering-item .img-container {
-    width: 100%;
+    width: 60%;
+  }
+
+  #offerings .offering-item .img-container .right,
+  #offerings .offering-item .img-container .left {
+    align-self: center;
   }
 
   /* work component */
 
   #work .work-header {
-    min-height: 50vh;
+    height: 15vh;
+    min-height: 10vh;
+    margin: 20vh 0;
   }
 
   #work .works-container .right,
@@ -1067,26 +1214,34 @@ section {
     margin: 0 0 150px;
   }
 
+  #work .desc-container .bg-container {
+    width: 500px;
+    height: 500px;
+  }
+
   #work .works-container .last {
     margin: 0;
   }
 
   #work .works-container .right .img-container {
     margin-left: 0;
-    width: auto;
-    height: 60vh;
+    width: 100%;
+    height: unset;
   }
 
   #work .works-container .left .img-container {
     margin-right: 0;
-    width: auto;
-    height: 60vh;
+    width: 100%;
+    height: unset;
   }
 
   /* contact component */
 
   .homepage-btn {
-    top: 15%;
+    bottom: 2%;
+    right: 30px;
+    top: unset;
+    left: unset;
   }
 
   #contact .contact-layout-container {
@@ -1097,24 +1252,33 @@ section {
     margin-top: 5vh;
   }
 
-  #contact .contact-layout-container .contact-container, #contact .contact-layout-container .img-container {
+  #contact .contact-layout-container .contact-container,
+  #contact .contact-layout-container .img-container {
     width: 80vw;
     max-width: 850px;
-    height: auto;
+    height: unset;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
-  #contact article ul .moshe-info, #contact article ul .contact-info, #contact article ul .social-info {
+  #contact article ul .moshe-info,
+  #contact article ul .contact-info,
+  #contact article ul .social-info {
     margin: 15px 0;
+  }
+
+  #contact .contact-layout-container .img-container img {
+    width: 55%;
   }
 
   /* email component */
 
   #email form {
     flex-direction: column;
-  }
-
-   #email form .inputBox {
-    height: 30vh;
+    height: 100vh;
   }
 
   #email form .inputBox-container {
@@ -1123,11 +1287,11 @@ section {
 
   #email form .inputBox input {
     padding-left: 20px;
-    font-size: 28px;
+    font-size: 20px;
   }
 
   #email form .inputBox input::placeholder {
-    font-size: 36px;
+    font-size: 22px;
     padding-left: 20px;
   }
 
@@ -1141,10 +1305,6 @@ section {
   /* animation settings */
 
   /* home component animations */
-  #home .home-header h1,
-  #home .home-header h2 {
-    overflow: hidden;
-  }
 
   #home .home-header h1 span {
     transform: translateY(100%);
@@ -1186,24 +1346,19 @@ section {
   }
 
   #work .desc-container .bg-container {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
     transform: rotate(180deg);
     font-size: 2.5rem;
-    width: 95vw;
-    height: auto;
+  }
+
+  #work .img-container img {
+    clip-path: circle(0% at 50% 50%);
   }
 
   /* contact component animations */
 
   #contact .contact-container {
-    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
-  }
-  
-  #contact .contact-form-header h2 {
-    transform: translateY(-150%);
-  }
-
-  #contact .reveal-paragraph {
-    transform: scale(0);
+    clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
   }
 
   #contact .moshe-emoji {
@@ -1370,7 +1525,7 @@ section {
   }
 
   #offerings .offering-item .img-container img {
-    width: 90%;
+    width: 100%;
   }
 
   /* skills component */
@@ -1390,10 +1545,6 @@ section {
   #work .img-container img,
   #work .visit-btn-container {
     width: 100%;
-  }
-
-  #work .img-container img {
-    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
   }
 
   #work .work-header {
@@ -1439,6 +1590,7 @@ section {
   #work .desc-container .bg-container {
     width: 350px;
     height: 350px;
+    border-radius: 50%;
   }
 
   /* #work .work-item .img-container {
@@ -1446,16 +1598,21 @@ section {
     height: 100vh;
   } */
 
-   #work .works-container .right .img-container,  #work .works-container .left .img-container {
+  #work .works-container .right .img-container,
+  #work .works-container .left .img-container {
     height: 100vh;
-   }
+  }
 
   #work .work-item .img-container .visit-btn-container a {
     font-size: 16px;
   }
 
+  #work .img-container img {
+    border: 2px solid var(--orange);
+  }
+
   #work .lets-talk-btn button {
-    margin-bottom: 20vh;
+    margin: 20vh 0;
   }
 
   /* contact component */
@@ -1491,6 +1648,10 @@ section {
   #contact .contact-layout-container .img-container {
     height: unset;
     margin-top: 10vh;
+  }
+
+  #contact .contact-layout-container .img-container img {
+    width: 75%;
   }
 
   #contact .contact-layout-container {

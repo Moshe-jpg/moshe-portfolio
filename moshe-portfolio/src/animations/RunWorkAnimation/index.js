@@ -9,7 +9,7 @@ const RunWorkAnimation = () => {
   const imgElems = gsap.utils.toArray("#work .img-container img");
   let mm = gsap.matchMedia();
 
-  mm.add("(max-width: 768px)", () => {
+  mm.add("(max-width: 999px)", () => {
     gsap.to(headerElem, {
       duration: 1,
       autoAlpha: 1,
@@ -27,6 +27,7 @@ const RunWorkAnimation = () => {
         autoAlpha: 1,
         ease: Power3,
         rotate: "360deg",
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
         scrollTrigger: {
           trigger: descHeader,
           start: "top 85%",
@@ -38,13 +39,13 @@ const RunWorkAnimation = () => {
 
     imgElems.forEach((img) => {
       gsap.to(img, {
-        duration: 1.5,
+        duration: 2.5,
         ease: Power3,
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        clipPath: "circle(100% at 50% 50%)",
         scrollTrigger: {
           trigger: img,
-          start: "top 95%",
-          end: "top 75%",
+          start: "top 75%",
+          end: "top 55%",
           once: true,
         },
       });
