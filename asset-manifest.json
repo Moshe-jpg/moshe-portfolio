@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/moshe-portfolio/static/css/main.c916ff24.css",
+    "main.css": "/moshe-portfolio/static/css/main.5f997183.css",
     "main.js": "/moshe-portfolio/static/js/main.7e432153.js",
     "static/js/787.03125900.chunk.js": "/moshe-portfolio/static/js/787.03125900.chunk.js",
     "static/media/ip-sr.webp": "/moshe-portfolio/static/media/ip-sr.77de7229eb4aa722ea8a.webp",
@@ -40,12 +40,12 @@
     "static/media/bootstrap.webp": "/moshe-portfolio/static/media/bootstrap.77da628a11043fdf436b.webp",
     "static/media/html.webp": "/moshe-portfolio/static/media/html.365c7a4931dbbae98297.webp",
     "index.html": "/moshe-portfolio/index.html",
-    "main.c916ff24.css.map": "/moshe-portfolio/static/css/main.c916ff24.css.map",
+    "main.5f997183.css.map": "/moshe-portfolio/static/css/main.5f997183.css.map",
     "main.7e432153.js.map": "/moshe-portfolio/static/js/main.7e432153.js.map",
     "787.03125900.chunk.js.map": "/moshe-portfolio/static/js/787.03125900.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c916ff24.css",
+    "static/css/main.5f997183.css",
     "static/js/main.7e432153.js"
   ]
 }
