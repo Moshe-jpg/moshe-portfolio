@@ -15,9 +15,59 @@ const RunOfferingsAnimation = () => {
 
   let mm = gsap.matchMedia();
 
-  mm.add("(min-width: 999.1px)", () => { 
-
-  })
+  mm.add("(min-width: 999.1px)", () => {
+    gsap.to(headerElem, {
+      autoAlpha: 1,
+      duration: 2.5,
+      ease: Power3,
+      clipPath: "circle(100% at 50% 50%)",
+      scrollTrigger: {
+        trigger: headerElem,
+        start: "top 85%",
+        once: true,
+      },
+    });
+    hiddenTextLower.forEach((text) => {
+      gsap.to(text, {
+        duration: 2,
+        autoAlpha: 1,
+        transform: "translateX(0)",
+        scrollTrigger: {
+          trigger: text,
+          start: "top 100%",
+          end: "top 95%",
+          once: true,
+        },
+      });
+    });
+    hiddenTextUpper.forEach((text) => {
+      gsap.to(text, {
+        duration: 2,
+        autoAlpha: 1,
+        transform: "translateX(0)",
+        scrollTrigger: {
+          trigger: text,
+          start: "top 100%",
+          end: "top 95%",
+          once: true,
+        },
+      });
+    });
+    imgElems.forEach((img) => {
+      gsap.to(img, {
+        autoAlpha: 1,
+        ease: Power3,
+        duration: 3,
+        clipPath: "circle(100% at 50% 50%)",
+        scrollTrigger: {
+          trigger: img,
+          start: "top 85%",
+          end: "top 75%",
+          once: true,
+        },
+      });
+    });
+  });
 
   mm.add("(max-width: 999px)", () => {
     gsap.to(headerElem, {

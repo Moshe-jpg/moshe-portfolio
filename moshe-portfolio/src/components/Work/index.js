@@ -41,7 +41,7 @@ const Work = (props) => {
     {
       imgSrc: innerPatternImg,
       imgMobile: ipMobile,
-      name: "InnerPattern",
+      name: "Inner Pattern",
       site_href: "http://innerpattern.herokuapp.com/",
       repo_href: "https://github.com/Tyl3r-s/InnerPattern",
       textSide: "right",
@@ -61,6 +61,27 @@ const Work = (props) => {
     homeElement.scrollIntoView({ behavior: "smooth" });
   };
 
+  // const DescContainer = (props) => {
+  //   if (window.matchMedia("(max-width: 999.1px)").matches) {
+  //     return (
+  //    <div className="desc-container">
+  //      <div className="bg-container">
+  //        <h4>{props.name}</h4>
+  //      </div>
+  //    </div>
+  //     );
+  //   }
+  //   return (
+  //     <div className="overlay">
+  //       <header className="project-name">
+  //         <h2></h2>
+  //       </header>
+  //       <p className="project-description">{}</p>
+  //       <ul className="tech-container">{/* <li></li> */}</ul>
+  //     </div>
+  //   );
+  // };
+
   return (
     <section id="work" ref={WorkRef}>
       <header className="work-header">
@@ -69,6 +90,7 @@ const Work = (props) => {
       <ul className="works-container">
         {works.map((work, index) => (
           <li key={index} className={`work-item ${work.textSide}`}>
+            {/* <DescContainer name={work.name} /> */}
             <div className="desc-container">
               <div className="bg-container">
                 <h4>{work.name}</h4>

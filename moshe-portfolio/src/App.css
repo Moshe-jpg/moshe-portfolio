@@ -72,19 +72,7 @@ article {
 }
 
 #work .img-container #click {
-  /* display: initial; */
-  position: absolute;
-  top: 5%;
-  margin: 0 auto;
-  width: 6rem;
-  height: 6rem;
-  padding: 10px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(5px);
-  transition: 0.5s ease-in-out;
-  animation: throb 1.5s infinite alternate;
-  z-index: 600;
+  display: none;
 }
 
 /* navbar styling */
@@ -536,19 +524,23 @@ section {
 }
 
 #work .works-container .left .desc-container {
-  left: 75px;
+  left: 25px;
+  width: 300px;
+  word-wrap: break-word;
 }
 
 #work .works-container .right .desc-container {
-  right: 75px;
+  right: 25px;
+  width: 300px;
+  word-wrap: break-word;
 }
 
 #work .works-container .left .img-container {
-  margin-right: 75px;
+  margin-right: 25px;
 }
 
 #work .works-container .right .img-container {
-  margin-left: 75px;
+  margin-left: 25px;
 }
 
 #work .desc-container {
@@ -561,10 +553,11 @@ section {
   text-align: center;
   position: relative;
   z-index: 555;
+  overflow: visible;
 }
 
 #work .desc-container h4 {
-  font-size: 44px;
+  font-size: 1.75rem;
   font-weight: bold;
   background-image: linear-gradient(
     to right,
@@ -587,10 +580,10 @@ section {
 
 #work .desc-container .bg-container {
   border: 1px solid var(--orange);
-  border-radius: 50%;
+  border-radius: 5px;
   padding: 50px 20px;
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -602,8 +595,7 @@ section {
 
 #work .work-item .img-container {
   position: relative;
-  width: 65%;
-  height: 100vh;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -701,8 +693,8 @@ section {
 
 .homepage-btn {
   position: fixed;
-  top: 50%;
-  left: 30px;
+  bottom: 2%;
+  right: 30px;
   width: 40px;
   height: 40px;
   background: var(--orange);
@@ -980,6 +972,7 @@ section {
 /* laptop sized animation settings */
 
 @media screen and (min-width: 999.1px) {
+  /* home component */
   #home .home-header h1 span {
     visibility: hidden;
     transform-style: preserve-3d;
@@ -999,6 +992,51 @@ section {
     visibility: hidden;
   }
 
+  /* offerings component animations */
+
+  #offerings header h1 span {
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  #offerings .offering-item .desc-container header span {
+    visibility: hidden;
+    transform: translateX(-100vw);
+  }
+
+  #offerings .offering-item .desc-container p span {
+    transform: translateX(100vw);
+  }
+  #offerings .offering-item .img-container img {
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  /* work component animations */
+  #work header h1 {
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  #work .desc-container .bg-container {
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  #work .img-container img {
+    clip-path: polygon(50% 0%, 50% 100%, 50% 100%, 50% 0%);
+  }
+
+  /* contact component animations */
+  #contact .contact-container {
+    transform: translateX(-100vw);
+    /* visibility: hidden; */
+  }
+
+  #contact .img-container {
+    transform: translateX(100vw);
+    /* visibility: hidden; */
+  }
+
+  #email form .inputBox-container .spacer {
+    width: 0;
+  }
 }
 
 @media screen and (max-width: 999px) {
@@ -1012,7 +1050,19 @@ starting position for middle to top and bottom
 end position
 .element:hover {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-} 
+}
+
+starting position middle to both sides
+
+.element {
+  clip-path: polygon(50% 0%, 50% 100%, 50% 100%, 50% 0%);
+  transition: clip-path 1s ease-out;
+}
+
+end position
+.element:hover {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
 
 starting position for center to outwards all directions
 .element {
@@ -1189,6 +1239,22 @@ end position
 
   /* work component */
 
+  #work .img-container #click {
+    display: initial;
+    position: absolute;
+    top: 5%;
+    margin: 0 auto;
+    width: 6rem;
+    height: 6rem;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px);
+    transition: 0.5s ease-in-out;
+    animation: throb 1.5s infinite alternate;
+    z-index: 600;
+  }
+
   #work .work-header {
     height: 15vh;
     min-height: 10vh;
@@ -1210,7 +1276,8 @@ end position
 
   #work .desc-container {
     width: 100%;
-    height: 50vh;
+    height: unset;
+    min-height: 75vh;
     margin: 0 0 150px;
   }
 
@@ -1257,7 +1324,6 @@ end position
     width: 80vw;
     max-width: 850px;
     height: unset;
-    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1514,11 +1580,11 @@ end position
     margin: 5px 0;
   }
 
-  #offerings .offering-item .desc-container span {
-    font-size: 3rem;
+  #offerings .offering-item .desc-container header span {
+    font-size: 26px;
   }
 
-  #offerings .offering-item .desc-container p {
+  #offerings .offering-item .desc-container p span {
     font-size: 18px;
     line-height: var(--height-large);
     letter-spacing: 1.2px;
