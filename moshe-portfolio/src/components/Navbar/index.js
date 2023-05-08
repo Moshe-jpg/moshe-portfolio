@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 // import favicon from "../../assets/favicon.ico";
 import menuBar from "../../assets/menu.webp";
+import xBar from "../../assets/xbar.png";
 
 const Navbar = (props) => {
   const { pages = [], setCurrentPage } = props;
   const [active, setActive] = useState("nav-menu");
-  const [original, turned] = useState("menu-btn");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navToggler = () => {
-    active === "nav-menu"
-      ? setActive("nav-menu nav-active")
-      : setActive("nav-menu");
-    original === "menu-btn"
-      ? turned("menu-btn turned-btn")
-      : turned("menu-btn");
+    setActive(active === "nav-menu" ? "nav-menu nav-active" : "nav-menu");
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const scrollToWork = () => {
@@ -39,7 +36,6 @@ const Navbar = (props) => {
           className="nav-link"
           onClick={() => {
             setActive("nav-menu");
-            turned("menu-btn");
             setTimeout(() => {
               scrollToTop();
               setCurrentPage(pages[0]);
@@ -58,7 +54,6 @@ const Navbar = (props) => {
           className="nav-link"
           onClick={() => {
             setActive("nav-menu");
-            turned("menu-btn");
             setTimeout(() => {
               scrollToTop();
               setCurrentPage(pages[0]);
@@ -77,7 +72,6 @@ const Navbar = (props) => {
           className="nav-link lets-talk-link"
           onClick={() => {
             setActive("nav-menu");
-            turned("menu-btn");
             scrollToTop();
             setTimeout(() => {
               setCurrentPage(pages[1]);
@@ -92,12 +86,13 @@ const Navbar = (props) => {
       </ul>
       <div onClick={navToggler} className="toggler">
         <img
-          width="100" height="100"
+          width="100"
+          height="100"
           rel="prefetch"
-          src={menuBar}
+          src={isMenuOpen ? xBar : menuBar}
           alt="open menu"
-          className={original}
-        ></img>
+          className={`menu-btn${isMenuOpen ? " turned-btn" : ""}`}
+        />
       </div>
     </nav>
   );
