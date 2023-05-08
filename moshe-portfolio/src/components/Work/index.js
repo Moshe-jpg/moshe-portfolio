@@ -93,17 +93,22 @@ const Work = (props) => {
             {/* <DescContainer name={work.name} /> */}
             <div className="desc-container">
               <div className="bg-container">
-                <h4>{work.name}</h4>
+                <h2>{work.name}</h2>
               </div>
             </div>
             <div className="img-container">
-              <img id="click" src={click} alt="Click this container"></img>
+              <img
+                id="click"
+                src={click}
+                alt="Click this container"
+                width="100" height="100"
+              ></img>
               {/* <LazyLoad height={200} offset={400}> */}
               <img
                 className="desc-container-img"
                 src={isMobile ? work.imgMobile : work.imgSrc}
-                alt={work.text}
-                width="100"
+                alt={work.name}
+                width="100" height="100"
               ></img>
               {/* </LazyLoad> */}
               <div className="visit-btn-container">

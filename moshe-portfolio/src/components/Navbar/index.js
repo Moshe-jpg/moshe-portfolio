@@ -33,10 +33,7 @@ const Navbar = (props) => {
 
   return (
     <nav className="navbar">
-      <a href="/moshe-portfolio">
-        {/* <img src={favicon} alt="Home icon" className="navigation-logo"></img> */}
-        Gadol.Dev
-      </a>
+      <a href="/">Gadol.Dev</a>
       <ul className={active}>
         <li
           className="nav-link"
@@ -95,6 +92,7 @@ const Navbar = (props) => {
       </ul>
       <div onClick={navToggler} className="toggler">
         <img
+          width="100" height="100"
           rel="prefetch"
           src={menuBar}
           alt="open menu"

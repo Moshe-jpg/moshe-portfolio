@@ -91,14 +91,17 @@ const Offerings = () => {
               <header className={`${offering.headerNumber}`}>
                 <span>{offering.title}</span>
               </header>
-              <p className={`${offering.pNumber}`}><span>{offering.description}</span></p>
+              <p className={`${offering.pNumber}`}>
+                <span>{offering.description}</span>
+              </p>
             </div>
             <div className="img-container">
-                <img
-                  src={offering.imgSrc}
-                  alt={offering.altTag}
-                  className={`${offering.imgSide}`}
-                ></img>
+              <img
+                width="100" height="100"
+                src={offering.imgSrc}
+                alt={offering.altTag}
+                className={`${offering.imgSide}`}
+              ></img>
             </div>
           </li>
         ))}

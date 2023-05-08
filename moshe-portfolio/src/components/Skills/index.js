@@ -85,6 +85,7 @@ const Skills = () => {
               <img
                 src={logo.imgSrc}
                 alt={logo.altTag}
+                width="100" height="100"
                 key={i}
                 title={logo.altTag}
               ></img>
@@ -97,6 +98,7 @@ const Skills = () => {
               <img
                 src={logo.imgSrc}
                 alt={logo.altTag}
+                width="100" height="100"
                 key={i}
                 title={logo.altTag}
               ></img>
@@ -109,6 +111,7 @@ const Skills = () => {
               <img
                 src={logo.imgSrc}
                 alt={logo.altTag}
+                width="100" height="100"
                 key={i}
                 title={logo.altTag}
               ></img>
@@ -121,6 +124,7 @@ const Skills = () => {
               <img
                 src={logo.imgSrc}
                 alt={logo.altTag}
+                width="100" height="100"
                 key={i}
                 title={logo.altTag}
               ></img>

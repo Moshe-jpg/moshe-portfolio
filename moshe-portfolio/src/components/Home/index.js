@@ -49,7 +49,7 @@ const Home = (props) => {
           }, 1000);
         }}
       >
-        <img src={chat} alt="Send Me A Message"></img>
+        <img src={chat} alt="Send Me A Message" width="100" height="100"></img>
       </button>
       <section id="home" ref={HomeRef}>
         <header className="home-header">
@@ -57,7 +57,9 @@ const Home = (props) => {
             <span className="text-reveal">MG</span>
           </h1>
           <h2 className="">
-          <span>{"< "}Front End Web Developer{" />"}</span>  
+            <span>
+              {"< "}Front End Web Developer{" />"}
+            </span>
           </h2>
           <div className="container">
             <span className="text first-text ">
