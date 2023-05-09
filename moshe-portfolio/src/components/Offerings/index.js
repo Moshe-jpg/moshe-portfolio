@@ -4,7 +4,7 @@ import Skills from "../Skills";
 import storyTellingImg from "../../assets/visual-storytelling.webp";
 import responsiveImg from "../../assets/responsive.webp";
 import animationImg from "../../assets/animation.webp";
-import seoImg from "../../assets/seo.webp";
+import seoImg from "../../assets/seo-2.webp";
 import speedImg from "../../assets/speed.webp";
 
 const Offerings = () => {

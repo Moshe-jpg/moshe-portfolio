@@ -57,7 +57,7 @@ const Contact = (props) => {
           }, 1000);
         }}
       >
-        <img width="100" height="100" src={back} alt="Back To Homepage"></img>
+        <img width="100" src={back} alt="Back To Homepage"></img>
       </button>
       <section id="contact" ref={ContactRef}>
         <div className="contact-layout-container">
@@ -87,14 +87,14 @@ const Contact = (props) => {
                   <div className="social-links">
                     <a href={imgArray[0].href} target="_blank" rel="noreferrer">
                       <img
-                        width="100" height="100"
+                        width="100"
                         src={imgArray[0].imgSrc}
                         alt={imgArray[0].altTag}
                       ></img>
                     </a>
                     <a href={imgArray[1].href} target="_blank" rel="noreferrer">
                       <img
-                        width="100" height="100"
+                        width="100"
                         src={imgArray[1].imgSrc}
                         alt={imgArray[1].altTag}
                       ></img>
@@ -106,7 +106,7 @@ const Contact = (props) => {
           </div>
           <div className="img-container">
             <img
-              width="100" height="100"
+              width="100"
               className="moshe-emoji"
               src={memoji}
               alt="Moshe Gadol Memoji"

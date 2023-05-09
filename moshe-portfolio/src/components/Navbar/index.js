@@ -28,6 +28,12 @@ const Navbar = (props) => {
     top.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleListItemClick = (callback) => {
+    setActive("nav-menu");
+    setIsMenuOpen(false);
+    callback();
+  };
+
   return (
     <nav className="navbar">
       <a href="/">Gadol.Dev</a>
@@ -35,53 +41,59 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setActive("nav-menu");
-            setTimeout(() => {
-              scrollToTop();
-              setCurrentPage(pages[0]);
+            handleListItemClick(() => {
               setTimeout(() => {
-                scrollToHome();
-              }, 500);
-            }, 1000);
+                scrollToTop();
+                setCurrentPage(pages[0]);
+                setTimeout(() => {
+                  scrollToHome();
+                }, 500);
+              }, 1000);
+            });
           }}
           title="Home"
           rel="noopener noreferrer"
           tabIndex="0"
         >
           Home
+          <div className="li-overlay">Home</div>
         </li>
         <li
           className="nav-link"
           onClick={() => {
-            setActive("nav-menu");
-            setTimeout(() => {
-              scrollToTop();
-              setCurrentPage(pages[0]);
+            handleListItemClick(() => {
               setTimeout(() => {
-                scrollToWork();
-              }, 500);
-            }, 1000);
+                scrollToTop();
+                setCurrentPage(pages[0]);
+                setTimeout(() => {
+                  scrollToWork();
+                }, 500);
+              }, 1000);
+            });
           }}
           title="My Work"
           rel="noopener noreferrer"
           tabIndex="0"
         >
           My Work
+          <div className="li-overlay">My Work</div>
         </li>
         <li
           className="nav-link lets-talk-link"
           onClick={() => {
-            setActive("nav-menu");
-            scrollToTop();
-            setTimeout(() => {
-              setCurrentPage(pages[1]);
-            }, 1000);
+            handleListItemClick(() => {
+              scrollToTop();
+              setTimeout(() => {
+                setCurrentPage(pages[1]);
+              }, 1000);
+            });
           }}
           title="Let's Talk"
           rel="noopener noreferrer"
           tabIndex="0"
         >
           Let's Talk
+          <div className="li-overlay">Let's Talk</div>
         </li>
       </ul>
       <div onClick={navToggler} className="toggler">
