@@ -4,7 +4,7 @@
 
 ### This site features my portfolio, and tells you about the services I offer
 
-#### You can visit the live site here [Gadol.dev](gadol.dev) and the github repo here [https://github.com/Moshe-jpg/moshe-portfolio](https://github.com/Moshe-jpg/moshe-portfolio)
+#### You can visit the live site here [Gadol.dev](https://gadol.dev) and the github repo here [https://github.com/Moshe-jpg/moshe-portfolio](https://github.com/Moshe-jpg/moshe-portfolio)
 
 #### I this site using a React.js framework, and utilized tools such as Email.js, GSAP, and CSS to make this a truly awesome website.
 
