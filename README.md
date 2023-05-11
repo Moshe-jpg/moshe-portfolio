@@ -10,13 +10,13 @@
 
 ## Check it out
 
-<img src="./moshe-portfolio/src/assets/readme-screenshots/main.png">
-<img src="./moshe-portfolio/src/assets/readme-screenshots/offering.png">
-<img src="./moshe-portfolio/src/assets/readme-screenshots/offering-2.png">
-<img src="./moshe-portfolio/src/assets/readme-screenshots/work.png">
-<img src="./moshe-portfolio/src/assets/readme-screenshots/contact-form.png">
-<img src="./moshe-portfolio/src/assets/readme-screenshots/email-form.png">
-<img src="./moshe-portfolio/src/assets/readme-screenshots/main-mobile.jpg">
-<img src="./moshe-portfolio/src/assets/readme-screenshots/offering-mobile.jpg">
-<img src="./moshe-portfolio/src/assets/readme-screenshots/work-mobile.jpg">
-<img src="./moshe-portfolio/src/assets/readme-screenshots/contact-mobile.jpg">
+<img width="100" src="./moshe-portfolio/src/assets/readme-screenshots/main.png">
+<img width="100" src="./moshe-portfolio/src/assets/readme-screenshots/offering.png">
+<img width="100" src="./moshe-portfolio/src/assets/readme-screenshots/offering-2.png">
+<img width="100" src="./moshe-portfolio/src/assets/readme-screenshots/work.png">
+<img width="100" src="./moshe-portfolio/src/assets/readme-screenshots/contact-form.png">
+<img width="100" src="./moshe-portfolio/src/assets/readme-screenshots/email-form.png">
+<img width="100" src="./moshe-portfolio/src/assets/readme-screenshots/main-mobile.jpg">
+<img width="100" src="./moshe-portfolio/src/assets/readme-screenshots/offering-mobile.jpg">
+<img width="100" src="./moshe-portfolio/src/assets/readme-screenshots/work-mobile.jpg">
+<img width="100" src="./moshe-portfolio/src/assets/readme-screenshots/contact-mobile.jpg">
