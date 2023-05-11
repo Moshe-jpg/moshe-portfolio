@@ -89,7 +89,7 @@ const Work = (props) => {
       </header>
       <ul className="works-container">
         {works.map((work, index) => (
-          <li key={index} className={`work-item ${work.textSide}`}>
+          <li key={index} className={`work-item`}>
             {/* <DescContainer name={work.name} /> */}
             <div className="desc-container">
               <div className="bg-container">
