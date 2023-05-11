@@ -438,6 +438,8 @@ section {
   /* width: 85px; */
   height: 85px;
   margin: 0 40px;
+  background: #8f8f8f;
+  border-radius: 5px;
 }
 
 @keyframes slide {
