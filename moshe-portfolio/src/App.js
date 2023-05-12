@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import loadingIcon from "./assets/loading.png";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
 import Footer from "./components/Footer";
@@ -25,6 +26,14 @@ function App() {
         currentPage={currentPage}
       />
       <div id="top"></div>
+      <div className="overlay-container">
+        <div className="overlay"></div>
+        <div className="overlay"></div>
+        <div className="overlay"></div>
+        <div className="overlay"></div>
+        <div className="overlay"></div>
+        <img src={loadingIcon} alt="loading" className="loading"></img>
+      </div>
       <main>
         <Page
           pages={pages}

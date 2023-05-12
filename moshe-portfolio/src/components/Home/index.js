@@ -52,7 +52,7 @@ const Home = (props) => {
         <img src={chat} alt="Send Me A Message" width="100" height="100"></img>
       </button>
       <section id="home" ref={HomeRef}>
-        <header className="home-header">
+        <header className="home-header mask">
           <h1 title="Moshe Gadol" alt="Moshe Gadol">
             <span className="text-reveal">MG</span>
           </h1>

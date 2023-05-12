@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "emailjs-com": "^3.2.0",
     "gsap": "^3.11.5",
+    "imagesloaded": "^5.0.0",
     "nodemon": "^2.0.20",
     "react": "^18.3.0-next-d962f35ca-20230418",
     "react-dom": "^18.3.0-next-d962f35ca-20230418",
