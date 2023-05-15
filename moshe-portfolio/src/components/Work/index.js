@@ -7,8 +7,8 @@ import mkImg from "../../assets/mk-sr.webp";
 import mkMobile from "../../assets/mk-mobile.webp";
 import innerPatternImg from "../../assets/ip-sr.webp";
 import ipMobile from "../../assets/ip-mobile.webp";
-import exerciseImg from "../../assets/rb-sr.webp";
-import rbMobile from "../../assets/rb-mobile.webp";
+import portfolioImg from "../../assets/portfolio-sr-lg.webp";
+import portfolioMobile from "../../assets/portfolio-sr-sm.webp";
 import click from "../../assets/click.webp";
 
 const Work = (props) => {
@@ -47,11 +47,11 @@ const Work = (props) => {
       textSide: "right",
     },
     {
-      imgSrc: exerciseImg,
-      imgMobile: rbMobile,
-      name: "Run Buddy",
-      site_href: "https://moshe-jpg.github.io/run-buddy/",
-      repo_href: "https://github.com/Moshe-jpg/run-buddy",
+      imgSrc: portfolioImg,
+      imgMobile: portfolioMobile,
+      name: "M.G. Portfolio",
+      site_href: "https://moshe-jpg.github.io/react-portfolio/",
+      repo_href: "https://github.com/Moshe-jpg/react-portfolio",
       textSide: "left last",
     },
   ];
@@ -60,27 +60,6 @@ const Work = (props) => {
     const homeElement = document.getElementById("home");
     homeElement.scrollIntoView({ behavior: "smooth" });
   };
-
-  // const DescContainer = (props) => {
-  //   if (window.matchMedia("(max-width: 999.1px)").matches) {
-  //     return (
-  //    <div className="desc-container">
-  //      <div className="bg-container">
-  //        <h4>{props.name}</h4>
-  //      </div>
-  //    </div>
-  //     );
-  //   }
-  //   return (
-  //     <div className="overlay">
-  //       <header className="project-name">
-  //         <h2></h2>
-  //       </header>
-  //       <p className="project-description">{}</p>
-  //       <ul className="tech-container">{/* <li></li> */}</ul>
-  //     </div>
-  //   );
-  // };
 
   return (
     <section id="work" ref={WorkRef}>
