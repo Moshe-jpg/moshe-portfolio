@@ -3,6 +3,7 @@ import RunOfferingsAnimation from "../../animations/RunOfferingsAnimation";
 import Skills from "../Skills";
 import storyTellingImg from "../../assets/visual-storytelling.webp";
 import responsiveImg from "../../assets/responsive.webp";
+import socialMediaImg from "../../assets/social-media.webp";
 import animationImg from "../../assets/animation.webp";
 import seoImg from "../../assets/seo-2.webp";
 import speedImg from "../../assets/speed.webp";
@@ -40,40 +41,52 @@ const Offerings = () => {
       imgNumber: "two",
     },
     {
-      title: "Flawless Animations",
+      title: "Social Content",
       description:
-        "Adding a touch of magic to your website with stunning animations",
+        "Specializing your social media strategy to widen your audience",
       textSide: "left",
       imgSide: "right",
-      imgSrc: animationImg,
-      altTag: "Flawless Animations",
+      imgSrc: socialMediaImg,
+      altTag: "Social Media Content",
       headerNumber: "three",
       pNumber: "three",
       imgNumber: "three",
     },
     {
-      title: "SEO Optimization",
+      title: "Flawless Animations",
       description:
-        "Maximizing your visibility in search engines with effective SEO strategies",
+        "Adding a touch of magic to your website with stunning animations",
       textSide: "right",
       imgSide: "left",
-      imgSrc: seoImg,
-      altTag: "SEO Optimization",
+      imgSrc: animationImg,
+      altTag: "Flawless Animations",
       headerNumber: "four",
       pNumber: "four",
       imgNumber: "four",
     },
     {
-      title: "Lightning Fast Speeds",
+      title: "SEO Optimization",
       description:
-        "Optimizing your site for speed to ensure a smooth user experience",
+        "Maximizing your visibility in search engines with effective SEO strategies",
       textSide: "left",
       imgSide: "right",
-      imgSrc: speedImg,
-      altTag: "Lightning Fast Speeds",
+      imgSrc: seoImg,
+      altTag: "SEO Optimization",
       headerNumber: "five",
       pNumber: "five",
       imgNumber: "five",
+    },
+    {
+      title: "Lightning Fast Speeds",
+      description:
+        "Optimizing your site for speed to ensure a smooth user experience",
+      textSide: "right",
+      imgSide: "left",
+      imgSrc: speedImg,
+      altTag: "Lightning Fast Speeds",
+      headerNumber: "six",
+      pNumber: "six",
+      imgNumber: "six",
     },
   ];
 
@@ -97,7 +110,8 @@ const Offerings = () => {
             </div>
             <div className="img-container">
               <img
-                width="100" height="100"
+                width="100"
+                height="100"
                 src={offering.imgSrc}
                 alt={offering.altTag}
                 className={`${offering.imgSide}`}
