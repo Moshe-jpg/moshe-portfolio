@@ -1,15 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import RunContactAnimation from "../../animations/RunContactAnimation";
-import EmailSection from "../EmailSection";
-import back from "../../assets/back.webp";
-import memoji from "../../assets/moshe-emoji.webp";
+import EmailForm from "../EmailForm/index.js";
 import linkedin from "../../assets/linkedin.webp";
 import github from "../../assets/github.webp";
 import phone from "../../assets/phone.webp";
 import gmail from "../../assets/gmail.webp";
 
-const Contact = (props) => {
-  const { pages = [], setCurrentPage } = props;
+const Contact = () => {
 
   const ContactRef = useRef(null);
 
@@ -40,25 +37,8 @@ const Contact = (props) => {
     },
   ];
 
-  const scrollToTop = () => {
-    const contactElement = document.getElementById("contact");
-    contactElement.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <>
-      <button
-        className="homepage-btn"
-        aria-label="Back To Home"
-        onClick={() => {
-          scrollToTop();
-          setTimeout(() => {
-            setCurrentPage(pages[0]);
-          }, 1000);
-        }}
-      >
-        <img width="100" src={back} alt="Back To Homepage"></img>
-      </button>
       <section id="contact" ref={ContactRef}>
         <div className="contact-layout-container">
           <div className="contact-container">
@@ -104,17 +84,12 @@ const Contact = (props) => {
               </ul>
             </article>
           </div>
-          <div className="img-container">
-            <img
-              width="100"
-              className="moshe-emoji"
-              src={memoji}
-              alt="Moshe Gadol Memoji"
-            ></img>
+          <div className="email-form-container">
+            <EmailForm />
           </div>
         </div>
       </section>
-      <EmailSection />
+      
     </>
   );
 };

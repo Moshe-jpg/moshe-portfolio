@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import RunOfferingsAnimation from "../../animations/RunOfferingsAnimation";
-import Skills from "../Skills";
 import storyTellingImg from "../../assets/visual-storytelling.webp";
 import responsiveImg from "../../assets/responsive.webp";
 import socialMediaImg from "../../assets/social-media.webp";
@@ -120,7 +119,6 @@ const Offerings = () => {
           </li>
         ))}
       </ul>
-      <Skills />
     </section>
   );
 };

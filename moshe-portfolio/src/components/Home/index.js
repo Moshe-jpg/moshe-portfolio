@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import RunHomeAnimation from "../../animations/RunHomeAnimation";
-import chat from "../../assets/chat.webp";
 import Offerings from "../Offerings";
 import Work from "../Work";
 
@@ -32,25 +31,8 @@ const Home = (props) => {
     };
   }, []);
 
-  const scrollToTop = () => {
-    const homeElement = document.getElementById("home");
-    homeElement.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <>
-      <button
-        className="message-btn"
-        aria-label="Send Me A Message"
-        onClick={() => {
-          scrollToTop();
-          setTimeout(() => {
-            setCurrentPage(pages[1]);
-          }, 1000);
-        }}
-      >
-        <img src={chat} alt="Send Me A Message" width="100" height="100"></img>
-      </button>
       <section id="home" ref={HomeRef}>
         <header className="home-header mask">
           <h1 title="Moshe Gadol" alt="Moshe Gadol">
