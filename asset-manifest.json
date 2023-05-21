@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc29e50a.css",
-    "main.js": "/static/js/main.4d74d1d4.js",
-    "static/js/787.03125900.chunk.js": "/static/js/787.03125900.chunk.js",
+    "main.css": "/static/css/main.b1d98f56.css",
+    "main.js": "/static/js/main.03689e76.js",
+    "static/js/787.b8f1cb3b.chunk.js": "/static/js/787.b8f1cb3b.chunk.js",
     "static/media/ip-sr.webp": "/static/media/ip-sr.77de7229eb4aa722ea8a.webp",
     "static/media/responsive.webp": "/static/media/responsive.814b81d1b11007c7b54c.webp",
     "static/media/orange-2.webp": "/static/media/orange-2.15e3198acef983ac115a.webp",
@@ -16,38 +16,21 @@
     "static/media/portfolio-sr-sm.webp": "/static/media/portfolio-sr-sm.40a964255b6c4e7bff5b.webp",
     "static/media/mk-mobile.webp": "/static/media/mk-mobile.7eab64d90367f72ae1fd.webp",
     "static/media/animation.webp": "/static/media/animation.c6f84e5994c2a34eb2e0.webp",
-    "static/media/loading.png": "/static/media/loading.f29a7d2df2f08a9269a1.png",
     "static/media/speed.webp": "/static/media/speed.afceb131b3b71915ecae.webp",
     "static/media/mk-sr.webp": "/static/media/mk-sr.a3dd3f0183587e69600c.webp",
-    "static/media/moshe-emoji.webp": "/static/media/moshe-emoji.a1824ffafb489450f1bb.webp",
-    "static/media/chat.webp": "/static/media/chat.0226e0d1b12a397b745c.webp",
     "static/media/phone.webp": "/static/media/phone.0174e3373cd15b83ae05.webp",
-    "static/media/gsap-logo.webp": "/static/media/gsap-logo.9257f4003665b46a58f6.webp",
     "static/media/click.webp": "/static/media/click.f074627e3b087c0111cc.webp",
     "static/media/github.webp": "/static/media/github.91e267856e094713843f.webp",
     "static/media/gmail.webp": "/static/media/gmail.5e9e56a1e972a86fd8db.webp",
     "static/media/menu.webp": "/static/media/menu.ea1565b0ca30680fa399.webp",
-    "static/media/mongodb.webp": "/static/media/mongodb.15ffc0fc205ed3802870.webp",
-    "static/media/back.webp": "/static/media/back.0a74544a0b1c48ca984f.webp",
-    "static/media/jquery.webp": "/static/media/jquery.6233d216afb7dc0fef83.webp",
     "static/media/linkedin.webp": "/static/media/linkedin.46df1aa07c649a723816.webp",
-    "static/media/javascript.webp": "/static/media/javascript.865ada96a8740cade26a.webp",
-    "static/media/react.webp": "/static/media/react.edd68bda0bcd0ca71862.webp",
-    "static/media/tailwind.webp": "/static/media/tailwind.75f3b862f65fec05d770.webp",
-    "static/media/node.webp": "/static/media/node.86a1ce7eb531b108185c.webp",
-    "static/media/express.webp": "/static/media/express.74786ff2875409692203.webp",
-    "static/media/css.webp": "/static/media/css.6aec36de8a67d0598d6a.webp",
-    "static/media/mongoose.webp": "/static/media/mongoose.94f7bdb6af0e988ff673.webp",
-    "static/media/mysql.webp": "/static/media/mysql.3e220b0acb6183049a27.webp",
-    "static/media/bootstrap.webp": "/static/media/bootstrap.77da628a11043fdf436b.webp",
-    "static/media/html.webp": "/static/media/html.365c7a4931dbbae98297.webp",
     "index.html": "/index.html",
-    "main.cc29e50a.css.map": "/static/css/main.cc29e50a.css.map",
-    "main.4d74d1d4.js.map": "/static/js/main.4d74d1d4.js.map",
-    "787.03125900.chunk.js.map": "/static/js/787.03125900.chunk.js.map"
+    "main.b1d98f56.css.map": "/static/css/main.b1d98f56.css.map",
+    "main.03689e76.js.map": "/static/js/main.03689e76.js.map",
+    "787.b8f1cb3b.chunk.js.map": "/static/js/787.b8f1cb3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc29e50a.css",
-    "static/js/main.4d74d1d4.js"
+    "static/css/main.b1d98f56.css",
+    "static/js/main.03689e76.js"
   ]
 }
