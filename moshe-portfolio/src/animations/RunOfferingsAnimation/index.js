@@ -11,8 +11,6 @@ const RunOfferingsAnimation = () => {
     "#offerings .offering-item .img-container img"
   );
 
-  //   const tl = gsap.timeline();
-
   let mm = gsap.matchMedia();
 
   mm.add("(min-width: 999.1px)", () => {
@@ -31,7 +29,6 @@ const RunOfferingsAnimation = () => {
       gsap.to(text, {
         duration: 2,
         autoAlpha: 1,
-        transform: "translateX(0)",
         scrollTrigger: {
           trigger: text,
           start: "top 100%",
@@ -86,7 +83,6 @@ const RunOfferingsAnimation = () => {
       gsap.to(text, {
         duration: 1,
         autoAlpha: 1,
-        transform: "translateY(0)",
         scrollTrigger: {
           trigger: text,
           start: "top 90%",

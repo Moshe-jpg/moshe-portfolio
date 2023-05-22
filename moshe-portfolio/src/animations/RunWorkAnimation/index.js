@@ -27,8 +27,10 @@ const RunWorkAnimation = () => {
     descHeaders.forEach((descHeader) => {
       gsap.to(descHeader, {
         duration: 2.5,
+        autoAlpha: 1,
         ease: Power3,
-        clipPath: "circle(100% at 50% 50%)",
+        rotate: "360deg",
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
         scrollTrigger: {
           trigger: descHeader,
           start: "top 85%",
@@ -68,6 +70,7 @@ const RunWorkAnimation = () => {
 
     descHeaders.forEach((descHeader) => {
       gsap.to(descHeader, 2, {
+        duration: 1.5,
         autoAlpha: 1,
         ease: Power3,
         rotate: "360deg",
