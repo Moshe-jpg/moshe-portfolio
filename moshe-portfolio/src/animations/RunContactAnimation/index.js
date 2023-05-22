@@ -33,7 +33,7 @@ const RunContactAnimation = () => {
 
   mm.add("(max-width: 999px)", () => {
     gsap.to("#contact .contact-container", {
-      duration: 2,
+      duration: 3.5,
       ease: Power3,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       scrollTrigger: {

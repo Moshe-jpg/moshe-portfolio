@@ -19,7 +19,7 @@ const Navbar = (props) => {
   };
 
   const scrollToHome = () => {
-    const homeElement = document.getElementById("home");
+    const homeElement = document.getElementById("top");
     homeElement.scrollIntoView({ behavior: "smooth" });
   };
 
