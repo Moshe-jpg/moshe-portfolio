@@ -634,28 +634,6 @@ section {
   border: 1px solid var(--white);
 }
 
-#work .last {
-  margin: 0;
-}
-
-#work .lets-talk-btn {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#work .lets-talk-btn button {
-  background: var(--orange);
-  color: var(--white);
-  font-size: 36px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: 0.5s ease-in-out;
-  animation: throb 1.5s infinite alternate;
-}
-
 /* contact component */
 
 .inputBoxBtn {
@@ -889,6 +867,88 @@ form .inputBoxBtn:hover {
   border: 1px solid var(--white);
 }
 
+/* footer component */
+
+.footer-component {
+  width: 90%;
+  border-radius: 25px;
+  background: var(--orange);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-component .footer-statement-container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.footer-component .footer-statement-container h4 {
+  font-size: 36px;
+  color: var(--white);
+  display: flex;
+}
+
+.footer-component .footer-statement-container button {
+  font-size: 32px;
+  background: var(--white);
+  color: var(--orange);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.footer-component .footer-statement-container button:hover {
+  box-shadow: 5px 5px 5px var(--black);
+}
+
+.footer-btn-container {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-btn-container a {
+  background: var(--white);
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.footer-btn-container a:hover {
+  box-shadow: 5px 5px 5px var(--black);
+}
+
+.footer-btn-container img {
+  width: 125px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-component {
+  padding: 10px;
+  font-weight: bold;
+}
+
 /* laptop sized animation settings */
 
 @media screen and (min-width: 999.1px) {
@@ -945,7 +1005,7 @@ form .inputBoxBtn:hover {
     clip-path: circle(0% at 50% 50%);
   }
 
-   #work .desc-container .bg-container {
+  #work .desc-container .bg-container {
     clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
     transform: rotate(180deg);
     font-size: 2.5rem;
@@ -1057,7 +1117,7 @@ end position
     transform: translateY(120%);
   }
 
-   #work .desc-container .bg-container {
+  #work .desc-container .bg-container {
     clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
     transform: rotate(180deg);
     font-size: 2.5rem;
@@ -1111,11 +1171,11 @@ end position
     backdrop-filter: blur(5px);
     /* opacity: 0.9; */
     transition: 0.5s ease-in-out;
-    margin: 15px 0 0;
     transition: 1.5s ease-in-out;
   }
 
-  .navbar ul li, .navbar ul .lets-talk-link {
+  .navbar ul li,
+  .navbar ul .lets-talk-link {
     font-size: 28px;
     border-bottom: 1px solid transparent;
     background: var(--orange);
@@ -1124,6 +1184,8 @@ end position
     cursor: pointer;
     border-bottom: none;
     transition: 0.5s ease-in-out;
+    position: relative;
+    bottom: 50px;
   }
 
   .navbar ul .lets-talk-link:hover {
@@ -1598,9 +1660,14 @@ end position
     max-height: unset;
     justify-content: center;
     flex-direction: column-reverse;
+    margin: 0 0 5vh;
   }
 
-  #contact .contact-layout-container .contact-container,
+  #contact .contact-layout-container .contact-container {
+    width: 100%;
+    max-width: unset;
+    overflow: hidden;
+  }
   #contact .contact-layout-container .email-form-container {
     width: 95%;
     max-width: unset;
@@ -1691,4 +1758,25 @@ end position
     width: 100%;
     height: 300px;
   }
+
+  /* footer component */
+
+  .footer-component {
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+  }
+
+  .footer-btn-container a {
+  background: unset;
+  border-radius: 0;
+  color: var(--white);
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+
+.footer-btn-container a:hover {
+  box-shadow: none;
+}
 }

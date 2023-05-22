@@ -47,13 +47,13 @@ const RunContactAnimation = () => {
 
     lines.forEach((line) => {
       gsap.to(line, {
-        duration: 1.5,
+        duration: 2.5,
         autoAlpha: 1,
         width: "100%",
         scrollTrigger: {
           trigger: document.querySelector("#form"),
           start: "top 80%",
-          end: "top 70%",
+          end: "top 60%",
           scrub: 2.5,
           once: true,
         },

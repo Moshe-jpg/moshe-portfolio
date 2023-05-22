@@ -11,8 +11,7 @@ import portfolioImg from "../../assets/portfolio-sr-lg.webp";
 import portfolioMobile from "../../assets/portfolio-sr-sm.webp";
 import click from "../../assets/click.webp";
 
-const Work = (props) => {
-  const { pages = [], setCurrentPage } = props;
+const Work = () => {
   const isMobile = window.innerWidth < 768;
 
   const WorkRef = useRef(null);
@@ -28,7 +27,6 @@ const Work = (props) => {
       name: "Kosher Innovations",
       site_href: "https://kosherinnovations.github.io/kosher-lamp/",
       repo_href: "https://github.com/KosherInnovations/kosher-lamp",
-      textSide: "right",
     },
     {
       imgSrc: mkImg,
@@ -36,7 +34,6 @@ const Work = (props) => {
       name: "Mekor Chaim",
       site_href: "https://moshe-jpg.github.io/mekor-chaim/",
       repo_href: "https://github.com/moshe-jpg/mekor-chaim",
-      textSide: "left",
     },
     {
       imgSrc: innerPatternImg,
@@ -44,7 +41,6 @@ const Work = (props) => {
       name: "Inner Pattern",
       site_href: "http://innerpattern.herokuapp.com/",
       repo_href: "https://github.com/Tyl3r-s/InnerPattern",
-      textSide: "right",
     },
     {
       imgSrc: portfolioImg,
@@ -52,14 +48,8 @@ const Work = (props) => {
       name: "M.G. Portfolio",
       site_href: "https://moshe-jpg.github.io/react-portfolio/",
       repo_href: "https://github.com/Moshe-jpg/react-portfolio",
-      textSide: "left last",
     },
   ];
-
-  const scrollToTop = () => {
-    const homeElement = document.getElementById("home");
-    homeElement.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <section id="work" ref={WorkRef}>
@@ -104,18 +94,6 @@ const Work = (props) => {
           </li>
         ))}
       </ul>
-      <div className="lets-talk-btn">
-        <button
-          onClick={() => {
-            scrollToTop();
-            setTimeout(() => {
-              setCurrentPage(pages[1]);
-            }, 1000);
-          }}
-        >
-          Let's Talk
-        </button>
-      </div>
     </section>
   );
 };
