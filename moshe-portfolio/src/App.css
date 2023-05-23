@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Domine&family=Nanum+Gothic&family=Noto+Serif+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Chivo+Mono");
 
 * {
   padding: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  font-family: var(--main-font);
+  font-family: var(--main-font), var(--main-font-secondary);
 }
 
 :root {
@@ -15,10 +15,8 @@
   --orange: #ff8400;
   --light-transparent: rgba(255, 255, 255, 0.25);
   --dark-transparent: rgba(0, 0, 0, 0.5);
-  --header-font: "Nanum Gothic", sans-serif;
-  --header-font-secondary: "Noto Serif JP", serif;
-  --main-font: "Chivo Mono", monospace;
-  --main-font-secondary: "Domine", serif;
+  --main-font: 'Fira Sans', sans-serif;
+  --main-font-secondary: 'Montserrat', sans-serif;
   --transition-5s: 0.5 ease-in-out;
   --spacing-small: 1.2px;
   --spacing-large: 1.5px;
@@ -140,6 +138,7 @@ article {
   justify-content: center;
   font-size: 1.5rem;
   color: var(--orange);
+  font-family: "Chivo Mono", monospace;;
 }
 
 .navbar .navigation-logo {
@@ -871,9 +870,12 @@ form .inputBoxBtn:hover {
 
 .footer-component {
   width: 90%;
+  max-width: 1250px;
+  margin: 2vh auto;
   border-radius: 25px;
   background: var(--orange);
-  height: 70vh;
+  height: 55vh;
+  max-height: 350px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -883,7 +885,7 @@ form .inputBoxBtn:hover {
 
 .footer-component .footer-statement-container {
   width: 100%;
-  height: 70%;
+  height: 68%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1029,6 +1031,18 @@ form .inputBoxBtn:hover {
   form .spacer {
     width: 0;
   }
+
+  /* footer component animations */
+
+  .footer-component {
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  .footer-component .footer-statement-container {
+    visibility: hidden;
+    transform: translateY(100%);
+  }
+
 }
 
 @media screen and (max-width: 999px) {
@@ -1137,6 +1151,17 @@ end position
     width: 0;
   }
 
+  /* footer component animations */
+
+  .footer-component {
+    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
+  }
+
+  .footer-component .footer-statement-container {
+    visibility: hidden;
+    transform: translateY(100%);
+  }s
+
   /*  */
 
   .navbar .toggler {
@@ -1158,18 +1183,20 @@ end position
     transform: rotate(-270deg);
   } */
 
+  .navbar {
+    padding: 0 30px;
+  }
+
   .navbar ul {
     position: fixed;
-    top: 10vh;
+    top: 12vh;
     right: 0;
     width: 100%;
-    height: 90vh;
+    height: 88vh;
     flex-direction: column;
     clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
-    /* background: var(--light-transparent); */
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    /* opacity: 0.9; */
+    -webkit-backdrop-filter: invert(1) blur(5px);
+    backdrop-filter: invert(1) blur(5px);
     transition: 0.5s ease-in-out;
     transition: 1.5s ease-in-out;
   }
@@ -1446,12 +1473,12 @@ end position
 
   /*  */
 
-  * {
+  /* * {
     font-family: var(--header-font-secondary);
-  }
+  } */
 
   .navbar {
-    padding: 15px;
+    padding: 0 15px;
   }
 
   .message-btn {
@@ -1764,7 +1791,9 @@ end position
   .footer-component {
     width: 100%;
     height: 80vh;
+    max-height: unset;
     border-radius: 5px;
+    padding: 20px;
   }
 
   .footer-btn-container a {

@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import RunFooterAnimation from "../../animations/RunFooterAnimation";
 
 const Footer = (props) => {
   const { pages = [], setCurrentPage } = props;
+
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    RunFooterAnimation(footerRef.current);
+  }, []);
+
   const scrollToTop = () => {
     const top = document.getElementById("top");
     top.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <footer className="footer-component">
+    <footer className="footer-component" ref={footerRef}>
       <div className="footer-statement-container">
-        <h4>Discover the power of a website<br></br>tailored to your needs</h4>
+        <h4>
+          Discover the power of a website<br></br>tailored to your needs
+        </h4>
         <button
           title="Let's Talk"
           onClick={() => {
@@ -29,7 +39,7 @@ const Footer = (props) => {
           target="_blank"
           rel="noreferrer"
         >
-          LI
+          Li
         </a>
         <a
           href="https://www.github.com/moshe-jpg"
@@ -37,7 +47,7 @@ const Footer = (props) => {
           target="_blank"
           rel="noreferrer"
         >
-          GH
+          Gh
         </a>
         <a
           href="mailto:mobgadol@gmail.com"
