@@ -39,7 +39,7 @@ const Footer = (props) => {
           target="_blank"
           rel="noreferrer"
         >
-          Li
+          LinkedIn
         </a>
         <a
           href="https://www.github.com/moshe-jpg"
@@ -47,7 +47,7 @@ const Footer = (props) => {
           target="_blank"
           rel="noreferrer"
         >
-          Gh
+          Github
         </a>
         <a
           href="mailto:mobgadol@gmail.com"
@@ -55,7 +55,7 @@ const Footer = (props) => {
           target="_blank"
           rel="noreferrer"
         >
-          Gm
+          Gmail
         </a>
         <a
           href="tel:647-571-2494"
@@ -63,10 +63,10 @@ const Footer = (props) => {
           target="_blank"
           rel="noreferrer"
         >
-          Ph
+          Phone
         </a>
       </div>
-      <p>Created By Moshe Gadol ♥</p>
+      <p>Created By Moshe Gadol</p>
     </footer>
   );
 };

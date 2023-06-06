@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import favicon from "../../assets/favicon.ico";
+import logo from "../../assets/moshe.webp";
 import menuBar from "../../assets/menu.webp";
 import xBar from "../../assets/xbar.png";
 
@@ -36,7 +37,7 @@ const Navbar = (props) => {
 
   return (
     <nav className="navbar">
-      <a href="/">Gadol.Dev</a>
+      <a href="/"><img src={logo} alt="Moshe Gadol Logo" className="navigation-logo"></img></a>
       <ul className={active}>
         <li
           className="nav-link"

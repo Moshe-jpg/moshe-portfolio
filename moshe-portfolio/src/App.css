@@ -142,7 +142,7 @@ article {
 }
 
 .navbar .navigation-logo {
-  width: 2.5rem;
+  width: 4.5rem;
 }
 
 .navbar ul {
@@ -917,33 +917,19 @@ form .inputBoxBtn:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
 .footer-btn-container a {
-  background: var(--white);
-  color: var(--orange);
+  color: var(--white);
   font-weight: bold;
   font-size: 18px;
-  padding: 10px;
-  border-radius: 50%;
   margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s ease-in-out;
-}
-
-.footer-btn-container a:hover {
-  box-shadow: 5px 5px 5px var(--black);
-}
-
-.footer-btn-container img {
-  width: 125px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .footer-component {
@@ -1800,8 +1786,7 @@ end position
   background: unset;
   border-radius: 0;
   color: var(--white);
-  height: 50px;
-  width: 50px;
+  width: 35%;
   margin: 5px;
 }
 
