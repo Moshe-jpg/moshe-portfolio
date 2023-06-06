@@ -7,8 +7,7 @@ import mkImg from "../../assets/mk-sr.webp";
 import mkMobile from "../../assets/mk-mobile.webp";
 import innerPatternImg from "../../assets/ip-sr.webp";
 import ipMobile from "../../assets/ip-mobile.webp";
-import portfolioImg from "../../assets/portfolio-sr-lg.webp";
-import portfolioMobile from "../../assets/portfolio-sr-sm.webp";
+import ttecImg from "../../assets/ttec-logo.webp";
 import click from "../../assets/click.webp";
 
 const Work = () => {
@@ -21,6 +20,13 @@ const Work = () => {
   }, []);
 
   const works = [
+    {
+      imgSrc: ttecImg,
+      imgMobile: ttecImg,
+      name: "Coming Soon - TTEC",
+      site_href: "#",
+      repo_href: "",
+    },
     {
       imgSrc: kiImg,
       imgMobile: kiMobile,
@@ -41,13 +47,6 @@ const Work = () => {
       name: "Inner Pattern",
       site_href: "http://innerpattern.herokuapp.com/",
       repo_href: "https://github.com/Tyl3r-s/InnerPattern",
-    },
-    {
-      imgSrc: portfolioImg,
-      imgMobile: portfolioMobile,
-      name: "M.G. Portfolio",
-      site_href: "https://moshe-jpg.github.io/react-portfolio/",
-      repo_href: "https://github.com/Moshe-jpg/react-portfolio",
     },
   ];
 
