@@ -7,7 +7,6 @@ import phone from "../../assets/phone.webp";
 import gmail from "../../assets/gmail.webp";
 
 const Contact = () => {
-
   const ContactRef = useRef(null);
 
   useEffect(() => {
@@ -89,7 +88,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      
     </>
   );
 };

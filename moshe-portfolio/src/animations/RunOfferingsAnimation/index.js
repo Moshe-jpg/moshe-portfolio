@@ -1,5 +1,6 @@
 import gsap, { Power3 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import VanillaTilt from "vanilla-tilt";
 
 const RunOfferingsAnimation = () => {
   gsap.registerPlugin(ScrollTrigger, Power3);
@@ -61,6 +62,13 @@ const RunOfferingsAnimation = () => {
           start: "top 85%",
           end: "top 75%",
           once: true,
+        },
+        onStart: () => {
+          VanillaTilt.init(img, {
+            max: 20,
+            speed: 400,
+            perspective: 500,
+          });
         },
       });
     });

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import RunFooterAnimation from "../../animations/RunFooterAnimation";
+import VanillaTilt from "vanilla-tilt";
 
 const Footer = (props) => {
   const { pages = [], setCurrentPage } = props;
@@ -8,6 +9,24 @@ const Footer = (props) => {
 
   useEffect(() => {
     RunFooterAnimation(footerRef.current);
+
+    const footerLinks = document.querySelectorAll(".footer-btn-container a");
+
+    VanillaTilt.init(
+      document.querySelector(
+        ".footer-component .footer-statement-container button"
+      ),
+      {
+        max: 20,
+        speed: 400,
+        perspective: 500,
+      }
+    );
+    VanillaTilt.init(footerLinks, {
+      max: 50,
+      speed: 400,
+      perspective: 500,
+    });
   }, []);
 
   const scrollToTop = () => {

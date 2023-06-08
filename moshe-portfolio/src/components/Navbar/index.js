@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-// import favicon from "../../assets/favicon.ico";
+import React, { useState, useEffect } from "react";
+import VanillaTilt from "vanilla-tilt";
 import logo from "../../assets/moshe.webp";
 import menuBar from "../../assets/menu.webp";
 import xBar from "../../assets/xbar.png";
@@ -8,6 +8,14 @@ const Navbar = (props) => {
   const { pages = [], setCurrentPage } = props;
   const [active, setActive] = useState("nav-menu");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    VanillaTilt.init(document.querySelector(".navbar a img"), {
+      max: 30,
+      speed: 400,
+      perspective: 500,
+    });
+  }, []);
 
   const navToggler = () => {
     setActive(active === "nav-menu" ? "nav-menu nav-active" : "nav-menu");
@@ -37,7 +45,13 @@ const Navbar = (props) => {
 
   return (
     <nav className="navbar">
-      <a href="/"><img src={logo} alt="Moshe Gadol Logo" className="navigation-logo"></img></a>
+      <a href="/">
+        <img
+          src={logo}
+          alt="Moshe Gadol Logo"
+          className="navigation-logo"
+        ></img>
+      </a>
       <ul className={active}>
         <li
           className="nav-link"

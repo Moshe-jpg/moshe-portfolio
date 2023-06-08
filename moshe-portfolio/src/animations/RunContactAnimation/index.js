@@ -1,5 +1,6 @@
 import gsap, { Power3 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import VanillaTilt from "vanilla-tilt";
 
 const RunContactAnimation = () => {
   gsap.registerPlugin(ScrollTrigger, Power3);
@@ -14,6 +15,15 @@ const RunContactAnimation = () => {
       duration: 1.5,
       transform: "translateX(0)",
       autoAlpha: 1,
+      onComplete: () => {
+        VanillaTilt.init(document.querySelector(".contact-container"), {
+          max: 20,
+          speed: 400,
+          perspective: 500,
+          glare: true,
+          "max-glare": 1,
+        });
+      },
     })
       .to(
         "#contact form",

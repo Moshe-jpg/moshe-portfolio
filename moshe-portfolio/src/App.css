@@ -244,6 +244,7 @@ section {
   align-items: center;
   justify-content: center;
   max-height: 100%;
+  overflow: hidden;
 }
 
 #home .home-header h2 {
@@ -260,6 +261,7 @@ section {
   justify-content: center;
   color: var(--orange);
   max-height: 100%;
+  overflow: hidden;
 }
 
 #home .home-header h1,
@@ -280,6 +282,7 @@ section {
   color: var(--white);
   font-weight: bold;
   max-height: 100%;
+  overflow: hidden;
 }
 
 /* Update the styles for .second-text element */
@@ -418,6 +421,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 #offerings .offering-item .img-container .right {
@@ -431,50 +435,6 @@ section {
 #offerings .offering-item .img-container img {
   width: 70%;
   height: unset;
-}
-
-/* skills section */
-
-#skills {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 20vh;
-}
-
-#skills .logos {
-  overflow: hidden;
-  margin-top: 20vh;
-  white-space: nowrap;
-  position: relative;
-}
-
-#skills .logos:hover .logos-slide {
-  animation-play-state: paused;
-}
-
-#skills .logos-slide {
-  animation: 25s slide infinite linear;
-  display: inline-block;
-}
-
-#skills .logos-slide img {
-  /* width: 85px; */
-  height: 85px;
-  margin: 0 40px;
-  background: #8f8f8f;
-  border-radius: 5px;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
 }
 
 /* work component */
@@ -540,6 +500,7 @@ section {
   font-size: 1.75rem;
   font-weight: bold;
   color: var(--orange);
+  overflow: hidden;
 }
 
 #work .desc-container p {
@@ -678,6 +639,7 @@ section {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
+  overflow: initial;
 }
 
 #contact .contact-layout-container .contact-container,
@@ -690,8 +652,7 @@ section {
 }
 
 #contact .contact-layout-container .contact-container {
-  background: var(--light-transparent);
-  /* backdrop-filter: blur(5px); */
+  background: linear-gradient(45deg, black 10px, var(--light-transparent));
   border-radius: 5px;
 }
 
@@ -904,11 +865,6 @@ form .inputBoxBtn:hover {
   color: var(--orange);
   padding: 10px 15px;
   border-radius: 5px;
-  transition: 0.5s ease-in-out;
-}
-
-.footer-component .footer-statement-container button:hover {
-  box-shadow: 5px 5px 5px var(--black);
 }
 
 .footer-btn-container {
@@ -919,17 +875,21 @@ form .inputBoxBtn:hover {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .footer-btn-container a {
   color: var(--white);
+  background: #d87103;
+  border-radius: 5px;
   font-weight: bold;
   font-size: 18px;
   margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s ease-in-out;
+  width: 20vw;
+  height: 100%;
 }
 
 .footer-component {
@@ -1787,6 +1747,7 @@ end position
   border-radius: 0;
   color: var(--white);
   width: 35%;
+  height: unset;
   margin: 5px;
 }
 

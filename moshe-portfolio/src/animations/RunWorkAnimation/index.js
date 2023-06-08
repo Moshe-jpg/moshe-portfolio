@@ -1,5 +1,6 @@
 import gsap, { Power3 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import VanillaTilt from "vanilla-tilt";
 
 const RunWorkAnimation = () => {
   gsap.registerPlugin(ScrollTrigger, Power3);
@@ -22,8 +23,6 @@ const RunWorkAnimation = () => {
       },
     });
 
-    // polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
-
     descHeaders.forEach((descHeader) => {
       gsap.to(descHeader, {
         duration: 2.5,
@@ -36,6 +35,13 @@ const RunWorkAnimation = () => {
           start: "top 85%",
           end: "top 75%",
           once: true,
+        },
+        onStart: () => {
+          VanillaTilt.init(descHeader, {
+            max: 20,
+            speed: 400,
+            perspective: 500,
+          });
         },
       });
     });
