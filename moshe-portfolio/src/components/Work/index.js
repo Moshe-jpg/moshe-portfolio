@@ -1,13 +1,14 @@
 import React, { useRef, useEffect } from "react";
 import RunWorkAnimation from "../../animations/RunWorkAnimation";
 // import LazyLoad from "react-lazyload";
+import ttecImg from "../../assets/ttec-logo.webp";
+import ttecMobile from "../../assets/ttec-sr-mobile.webp";
 import kiImg from "../../assets/ki-sr.webp";
 import kiMobile from "../../assets/ki-mobile.webp";
 import mkImg from "../../assets/mk-sr.webp";
 import mkMobile from "../../assets/mk-mobile.webp";
 import innerPatternImg from "../../assets/ip-sr.webp";
 import ipMobile from "../../assets/ip-mobile.webp";
-import ttecImg from "../../assets/ttec-logo.webp";
 import click from "../../assets/click.webp";
 
 const Work = () => {
@@ -22,10 +23,10 @@ const Work = () => {
   const works = [
     {
       imgSrc: ttecImg,
-      imgMobile: ttecImg,
-      name: "Coming Soon - TTEC",
-      site_href: "#",
-      repo_href: "",
+      imgMobile: ttecMobile,
+      name: "TTEC",
+      site_href: "https://ttecyeshiva.com",
+      repo_href: "https://github.com/moshe-jpg/ttec",
     },
     {
       imgSrc: kiImg,
