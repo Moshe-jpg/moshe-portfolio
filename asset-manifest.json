@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd9e4f35.css",
-    "main.js": "/static/js/main.08bf56c6.js",
+    "main.css": "/static/css/main.98d1beaf.css",
+    "main.js": "/static/js/main.27ddbae6.js",
     "static/js/787.03125900.chunk.js": "/static/js/787.03125900.chunk.js",
     "static/media/ip-sr.webp": "/static/media/ip-sr.77de7229eb4aa722ea8a.webp",
     "static/media/responsive.webp": "/static/media/responsive.814b81d1b11007c7b54c.webp",
@@ -18,6 +18,8 @@
     "static/media/animation.webp": "/static/media/animation.c6f84e5994c2a34eb2e0.webp",
     "static/media/speed.webp": "/static/media/speed.afceb131b3b71915ecae.webp",
     "static/media/mk-sr.webp": "/static/media/mk-sr.a3dd3f0183587e69600c.webp",
+    "static/media/symetryx-sr-mobile.webp": "/static/media/symetryx-sr-mobile.223cd17eeb3201dc9932.webp",
+    "static/media/symetryx-sr.webp": "/static/media/symetryx-sr.9e0115fbde60cdaa1101.webp",
     "static/media/ttec-logo.webp": "/static/media/ttec-logo.8ff75bdf98031e5ca9df.webp",
     "static/media/phone.webp": "/static/media/phone.0174e3373cd15b83ae05.webp",
     "static/media/click.webp": "/static/media/click.f074627e3b087c0111cc.webp",
@@ -26,12 +28,12 @@
     "static/media/menu.webp": "/static/media/menu.ea1565b0ca30680fa399.webp",
     "static/media/linkedin.webp": "/static/media/linkedin.46df1aa07c649a723816.webp",
     "index.html": "/index.html",
-    "main.cd9e4f35.css.map": "/static/css/main.cd9e4f35.css.map",
-    "main.08bf56c6.js.map": "/static/js/main.08bf56c6.js.map",
+    "main.98d1beaf.css.map": "/static/css/main.98d1beaf.css.map",
+    "main.27ddbae6.js.map": "/static/js/main.27ddbae6.js.map",
     "787.03125900.chunk.js.map": "/static/js/787.03125900.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd9e4f35.css",
-    "static/js/main.08bf56c6.js"
+    "static/css/main.98d1beaf.css",
+    "static/js/main.27ddbae6.js"
   ]
 }
