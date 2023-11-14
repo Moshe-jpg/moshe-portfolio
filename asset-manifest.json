@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.98d1beaf.css",
-    "main.js": "/static/js/main.47e6414d.js",
+    "main.js": "/static/js/main.f093ab58.js",
     "static/js/787.03125900.chunk.js": "/static/js/787.03125900.chunk.js",
+    "static/media/hadas-studio-sr.png": "/static/media/hadas-studio-sr.b3d4edec1e573722b56b.png",
+    "static/media/hadas-studio-sr-mobile.png": "/static/media/hadas-studio-sr-mobile.12a1600efb5ae1f3cbcc.png",
     "static/media/iphone-sr-large.png": "/static/media/iphone-sr-large.35c34ebca343e3755b6b.png",
     "static/media/responsive.webp": "/static/media/responsive.814b81d1b11007c7b54c.webp",
     "static/media/orange-2.webp": "/static/media/orange-2.15e3198acef983ac115a.webp",
@@ -14,10 +16,8 @@
     "static/media/ki-mobile.webp": "/static/media/ki-mobile.240bb8811e42c064ccc1.webp",
     "static/media/ttec-sr-mobile.webp": "/static/media/ttec-sr-mobile.3585cac344d754fc6ee4.webp",
     "static/media/logo.webp": "/static/media/logo.8632a20cf7efd0fe90ae.webp",
-    "static/media/mk-mobile.webp": "/static/media/mk-mobile.7eab64d90367f72ae1fd.webp",
     "static/media/animation.webp": "/static/media/animation.c6f84e5994c2a34eb2e0.webp",
     "static/media/speed.webp": "/static/media/speed.afceb131b3b71915ecae.webp",
-    "static/media/mk-sr.webp": "/static/media/mk-sr.a3dd3f0183587e69600c.webp",
     "static/media/symetryx-sr-mobile.webp": "/static/media/symetryx-sr-mobile.223cd17eeb3201dc9932.webp",
     "static/media/symetryx-sr.webp": "/static/media/symetryx-sr.9e0115fbde60cdaa1101.webp",
     "static/media/ttec-logo.webp": "/static/media/ttec-logo.8ff75bdf98031e5ca9df.webp",
@@ -29,11 +29,11 @@
     "static/media/linkedin.webp": "/static/media/linkedin.46df1aa07c649a723816.webp",
     "index.html": "/index.html",
     "main.98d1beaf.css.map": "/static/css/main.98d1beaf.css.map",
-    "main.47e6414d.js.map": "/static/js/main.47e6414d.js.map",
+    "main.f093ab58.js.map": "/static/js/main.f093ab58.js.map",
     "787.03125900.chunk.js.map": "/static/js/787.03125900.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98d1beaf.css",
-    "static/js/main.47e6414d.js"
+    "static/js/main.f093ab58.js"
   ]
 }
