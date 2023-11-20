@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.24d6e16d.css",
+    "main.css": "/static/css/main.d152f3a1.css",
     "main.js": "/static/js/main.c6b8172e.js",
     "static/js/787.03125900.chunk.js": "/static/js/787.03125900.chunk.js",
     "static/media/hadas-studio-sr.png": "/static/media/hadas-studio-sr.b3d4edec1e573722b56b.png",
@@ -28,12 +28,12 @@
     "static/media/menu.webp": "/static/media/menu.ea1565b0ca30680fa399.webp",
     "static/media/linkedin.webp": "/static/media/linkedin.46df1aa07c649a723816.webp",
     "index.html": "/index.html",
-    "main.24d6e16d.css.map": "/static/css/main.24d6e16d.css.map",
+    "main.d152f3a1.css.map": "/static/css/main.d152f3a1.css.map",
     "main.c6b8172e.js.map": "/static/js/main.c6b8172e.js.map",
     "787.03125900.chunk.js.map": "/static/js/787.03125900.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24d6e16d.css",
+    "static/css/main.d152f3a1.css",
     "static/js/main.c6b8172e.js"
   ]
 }
